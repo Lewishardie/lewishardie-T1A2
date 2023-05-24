@@ -1,0 +1,32 @@
+
+.header {
+    background-color: $secondary-color;
+    
+       
+    .nav-header {
+        
+        background-color: grey;
+
+        }
+
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-evenly;
+        
+        li {
+            text-align: center;
+            padding: .5rem;
+
+            a {
+                text-decoration: none;
+                color: $font-primary-color;
+                }
+            
+            }
+
+        }
+
+}
