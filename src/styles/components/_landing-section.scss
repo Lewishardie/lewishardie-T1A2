@@ -8,13 +8,17 @@
     .container {
 
         display: flex;
-        align-items: top;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
         .landing-info {
+
+            padding-bottom: 1rem;
                      
             h3 {
                 text-align: left;
-                margin-bottom: .5rem;
+                margin-bottom: 1rem;
                 font-size: 3rem;
                 font-weight: 400;
             }
@@ -23,15 +27,43 @@
                 text-align: left;
             }
 
+            
+
         }
 
-        .text {
-            margin-left: .5rem;
-        }
+    }
+}
 
-        .img {
-            margin-right: .5rem;
-        }
+.landing-action-container {
+    margin: 0 auto;
+    no stress
+    display: flex;
+    flex-direction: row;
+    
 
+    .contact-btn {
+
+        a {
+            background-color: $primary-color;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+
+        }
+    }
+
+    .resume-btn {
+
+        a {
+            background-color: $primary-color;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+
+        }
     }
 }
