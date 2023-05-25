@@ -10,25 +10,23 @@
 </head>
 <body>
     
-    <!-- Header Component -->
+    <!-- Header and Navigation Component -->
 
     <header class="header">
             <nav class="nav">
-                <div class="nav-header">
-                    
+                <div class="logo">
                     <a href="/src/index.html"><img src="assets/logo-l.png" alt="Lewis Hardie Logo"></a>
-                
-                <!-- Navigation Component -->
+    
                 </div>
                 
-                    <ul class="nav-bar">
-                        <li><a href="/pages/index.html">/home</a></li>
-                        <li><a href="/pages/about.html">/about</a></li>
-                        <li><a href="/pages/projects.html">/projects</a></li>
-                        <li><a href="/pages/blog.html">/blog</a></li>
-                        <li><a href="/pages/contact.html">/contact</a></li>
-                    </ul>     
-                </nav>
+                <ul class="nav-bar">
+                    <li><a href="/pages/index.html">/home</a></li>
+                    <li><a href="/pages/about.html">/about</a></li>
+                    <li><a href="/pages/projects.html">/projects</a></li>
+                    <li><a href="/pages/blog.html">/blog</a></li>
+                    <li><a href="/pages/contact.html">/contact</a></li>
+                </ul>     
+            </nav>
     </header>
     
     <!-- Landing Component -->
@@ -39,18 +37,21 @@
                 <img src="assets/lewis-mum.jpeg" alt="Lewis landing image">
 
             </div>
-            <div class="landing-info text">
-                <h3>Hello, my name is Lewis.</h3>
-                <p>I am an aspiring full stack developer based in Melbourne, Victoria.</p>
-            </div>
-            <div class="landing-action-container">
-                <div class="contact-btn">
-                    <a href="/contact.html">Get In Touch</a>
+            
+                <div class="landing-info text">
+                    <div class="landing-text-container">
+                        <h1>Hello, my name is Lewis.</h1>
+                        <p>I am an aspiring full stack developer based in Melbourne, Victoria.</p>
+                    </div>
+                <div class="landing-action-container">
+                    <div class="contact-btn">
+                        <a href="/contact.html">Get In Touch</a>
+                    </div>
+                    <div class="resume-btn">
+                        <a href="lewishardie_resume.pdf">Resume</a>
+                    </div>
                 </div>
-                <div class="resume-btn">
-                    <a href="lewishardie_resume.pdf">Resume</a>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -58,12 +59,18 @@
 
     <section class="about">
         <div class="container">
-            <div class="about-info">
-                <h2>/about</h2>
-                <p>lorem ipsum</p>
-                <button class="view-more-btn">View More</button>
+            <div class="about-info text">
+                <div class="about-text-container">
+                <h1>/about</h1>
+                <p>ith it installed in the code editor you are using, you can type “lorem” and then tab and it will expand into a paragraph of Lorem Ipsum placeholder text. But it can do more! You can control how much you get, place it within HTML structure as it expands, and get different bits of it in repeated elements.</p>
+                </div>
+                <div class="view-more-btn">
+                    <a href="/pages/about.html">View More</a>
+                </div>
             </div>
-            <div class="about-info">
+            <!--<div class="about-action-container">
+            </div> -->
+            <div class="about-info img">
                 <img src="assets/lewis-beer.jpeg" alt="Lewis drinking beer">
             </div>
         </div>
@@ -83,13 +90,25 @@
 
 
     <footer class="footer">
-        <ul class="footer-links">
-            <li><a href="https://www.linkedin.com/in/lewishardie/"><img src="assets/linkedin.png" alt="Icon made by Pixel perfect from www.flaticon.com"</a></li>
-            <li><a href="https://github.com/Lewbagz"><img src="assets/Github.png" alt="Github"</a></li>
-            <li><a href="https://twitter.com/lewishardie"><img src="assets/Twitter.png" alt="Twitter"</a></li>
-            <li><a href="mailto:lewishardie@gmail.com"><img src="assets/email.png" alt="E-mail"></a></li>
-            <li><a href="/resume"><img src="assets/resume.png" alt="Resume"></a></li>
-        </ul>
+        
+        <div class="footer-arrow">
+            <div class="gradient">
+                <a class="top" href="#top"><img src="/assets/arrow.png"></a>
+            </div>
+        </div>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/lewishardie/"><img src="assets/linkedin.png" alt="Icon made by Pixel perfect from www.flaticon.com"</a></li>
+                <li><a href="https://github.com/Lewbagz"><img src="assets/Github.png" alt="Github"</a></li>
+                <li><a href="https://twitter.com/lewishardie"><img src="assets/Twitter.png" alt="Twitter"</a></li>
+                <li><a href="mailto:lewishardie@gmail.com"><img src="assets/email.png" alt="E-mail"></a></li>
+                <li><a href="/resume"><img src="assets/resume.png" alt="Resume"></a></li>
+            </ul>
+        </div>
+
+
+
+    
     </footer>
     
 </body>

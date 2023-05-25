@@ -19,3 +19,8 @@ Twitter.png - Icon made by Freepik from www.flaticon.com
 email.png - Icon made by Uniconlabs from www.flaticon.com
     - https://www.flaticon.com/free-icon/email_3178158
 
+arrow.png - Icon made by Freepik from www.flaticon.com
+    - https://www.flaticon.com/free-icon/right-arrow-in-a-circle_44522
+
+resume.png - Icon made by Freepik from www.flaticon.com
+    - https://www.flaticon.com/free-icon/curriculum-vitae_909314
