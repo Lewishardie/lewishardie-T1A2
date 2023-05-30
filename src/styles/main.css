@@ -29,7 +29,7 @@
   display: flex;
   width: 100vw;
   justify-content: space-around;
-  align-content: end;
+  align-content: flex-end;
   list-style-type: none;
 }
 .header .nav .nav-bar li {
@@ -105,6 +105,30 @@
   border: 1px solid #230d28;
 }
 
+.projects {
+  width: 80vw;
+}
+.projects .project-card img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #230d28;
+}
+
+.blog {
+  width: 80vw;
+}
+.blog .blog-card img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #230d28;
+}
+
 .footer img {
   width: 64px;
   height: 64px;
@@ -112,6 +136,46 @@
 .footer ul img {
   width: 32px;
   height: 32px;
+}
+
+.about {
+  width: 100vw;
+  background-color: #f1ddfc;
+}
+.about .container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(210, 209, 209);
+}
+.about .container .about-info.img {
+  margin-bottom: 1rem;
+}
+.about .container .about-info {
+  width: 100%;
+}
+.about .container .about-info .about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.about .container .about-info .about-text-container h1 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.about .container .about-info .about-text-container p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.about .container .about-info .view-more-btn {
+  display: flex;
+  justify-content: right;
 }
 
 .landing {
@@ -175,43 +239,93 @@
   transition: 0.1s;
 }
 
-.about {
+.projects {
   width: 100vw;
-  background-color: #f1ddfc;
 }
-.about .container {
+.projects .container {
   display: flex;
-  flex-direction: column-reverse;
   align-items: center;
   margin-bottom: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-bottom: 2px solid rgb(210, 209, 209);
 }
-.about .container .about-info {
+.projects .container .project-cards {
   width: 100%;
 }
-.about .container .about-info .about-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
+.projects .container .project-cards a {
+  text-decoration: none;
+  color: inherit;
 }
-.about .container .about-info .about-text-container h1 {
-  text-align: left;
+.projects .container .project-cards h1 {
   margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: 400;
 }
-.about .container .about-info .about-text-container p {
-  margin-bottom: 1rem;
+.projects .container .project-cards .project-description {
   text-align: left;
+  padding: 1rem;
 }
-.about .container .about-info .view-more-btn {
+.projects .container .project-cards .project-description h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.projects .container .project-cards .project-description h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.projects .container .project-cards .project-card {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.projects .container .project-cards .view-more-btn {
   display: flex;
   justify-content: right;
 }
-.about .container .about-info .view-more-btn a {
+
+.blog {
+  width: 100vw;
+  background-color: #f1ddfc;
+}
+.blog .container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgb(210, 209, 209);
+}
+.blog .container .blog-cards h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.blog .container .blog-cards a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog .container .blog-description {
+  text-align: left;
+  padding: 1rem;
+}
+.blog .container .blog-description h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.blog .container .blog-description p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.blog .container .view-more-btn {
+  display: flex;
+  justify-content: right;
+}
+
+.view-more-btn a {
   width: 8rem;
   min-height: 2rem;
   display: flex;
@@ -224,7 +338,4 @@
   border-radius: 0.5rem;
   background: #dbfa61;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
-}
-.about .container .about-info.img {
-  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

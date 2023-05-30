@@ -11,6 +11,10 @@
         padding-bottom: 2rem;
         border-bottom: 2px solid $nav-border;
 
+        .about-info.img {
+            margin-bottom: 1rem;
+        }
+
         .about-info {
 
             width: 100%;
@@ -40,26 +44,11 @@
                 display: flex;
                 justify-content: right;
 
-                a {
-                    width: 8rem;
-                    min-height: 2rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    background-color: $secondary-color;
-                    color: $font-primary-color;
-                    border-radius: .5rem;
-                    background: $secondary-color;
-                    box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2); 
-                }
+                
             }
         
         }
 
-        .about-info.img {
-            margin-bottom: 1rem;
-        }
+        
     }
 }

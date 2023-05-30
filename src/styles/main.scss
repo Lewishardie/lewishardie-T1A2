@@ -2,12 +2,22 @@
 @import 'components/default';
 @import 'components/colors';
 
-// components
+// navigation components
 
 @import 'components/navbar';
 @import 'components/footer';
 
+// media
 
 @import 'components/images';
-@import 'components/landing-section';
-@import 'components/about-section';
+
+
+// landing page components 
+
+@import 'components/landing-page/about-section.scss';
+@import 'components/landing-page/landing-section.scss';
+@import 'components/landing-page/projects-section.scss';
+@import 'components/landing-page/blog-section';
+
+// button components
+@import 'components/buttons';
