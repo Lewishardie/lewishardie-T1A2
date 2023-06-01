@@ -8,174 +8,199 @@
     <link rel="stylesheet" href="styles/main.css">
 
 </head>
-<body>
-    
-    <!-- Header and Navigation Component -->
+    <body>
+        
+        <!-- Header and Navigation Component -->
 
-    <header class="header">
-            <nav class="nav">
-                <div class="logo">
-                    <a href="/src/index.html"><img src="assets/logo-l.png" alt="Lewis Hardie Logo"></a>
-    
+        <header class="header">
+                <nav class="nav">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/logo-l.png" alt="Lewis Hardie Logo"></a>
+        
+                    </div>
+                    
+                    <ul class="nav-bar">
+                        <li><a href="/" class="current-page">/home</a></li>
+                        <li><a href="/pages/about.html">/about</a></li>
+                        <li><a href="/pages/projects.html">/projects</a></li>
+                        <li><a href="/pages/blog.html">/blog</a></li>
+                        <li><a href="/pages/contact.html">/contact</a></li>
+                    </ul>     
+                </nav>
+        </header>
+        
+        <!-- Landing Component -->
+
+        <section class="landing">
+            <div class="container">
+                <div class="landing-info img">
+                    <img src="assets/lewis-mum.jpeg" alt="Lewis landing image">
+
                 </div>
                 
-                <ul class="nav-bar">
-                    <li><a href="/">/home</a></li>
-                    <li><a href="/pages/about.html">/about</a></li>
-                    <li><a href="/pages/projects.html">/projects</a></li>
-                    <li><a href="/pages/blog.html">/blog</a></li>
-                    <li><a href="/pages/contact.html">/contact</a></li>
-                </ul>     
-            </nav>
-    </header>
-    
-    <!-- Landing Component -->
-
-    <section class="landing">
-        <div class="container">
-            <div class="landing-info img">
-                <img src="assets/lewis-mum.jpeg" alt="Lewis landing image">
-
-            </div>
-            
-                <div class="landing-info text">
-                    <div class="landing-text-container">
-                        <h1>Hello, my name is Lewis.</h1>
-                        <p>I am an aspiring full stack developer based in Melbourne, Victoria.</p>
-                    </div>
-                <div class="landing-action-container">
-                    <div class="contact-btn">
-                        <a href="/contact.html">Get In Touch</a>
-                    </div>
-                    <div class="resume-btn">
-                        <a href="lewishardie_resume.pdf">Resume</a>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <!-- About Me Component -->
-
-    <section class="about">
-        <div class="container">
-            <div class="about-info text">
-                <div class="about-text-container">
-                <h1>/about</h1>
-                <p>ith it installed in the code editor you are using, you can type “lorem” and then tab and it will expand into a paragraph of Lorem Ipsum placeholder text. But it can do more! You can control how much you get, place it within HTML structure as it expands, and get different bits of it in repeated elements.</p>
-                </div>
-                <div class="view-more-btn">
-                    <a href="/pages/about.html">View More</a>
-                </div>
-            </div>
-            <!--<div class="about-action-container">
-            </div> -->
-            <div class="about-info img">
-                <img src="assets/lewis-beer.jpeg" alt="Lewis drinking beer">
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Recent Projects Component -->
-
-    <section class="projects">
-        <div class="container">
-            <div class="project-cards">
-                <h1>/recent-projects</h1>
-                <a href="/pages/projects.html">
-                    <div class="project-card">
-                        <img src="assets/LH.png" alt="Image of LH logo">
-                        <div class="project-description">
-                            <h2>Lewis Hardie Logo</h2>
-                            <h3>Design Project</h3>
+                    <div class="landing-info text">
+                        <div class="landing-text-container">
+                            <h1>Hello, my name is Lewis.</h1>
+                            <p>I am an aspiring full stack developer based in Melbourne, Victoria.</p>
+                        </div>
+                    <div class="landing-action-container">
+                        <div class="contact-btn">
+                            <a href="/contact.html">Get In Touch</a>
+                        </div>
+                        <div class="resume-btn">
+                            <a href="/assets/LewisHardie_Resume.pdf">Resume</a>
                         </div>
                     </div>
-                </a>
-                <a href="/pages/projects.html">
-                    <div class="project-card">
-                        
-                        <img src="assets/JML.jpg" alt="image of JML logo">
-                        <div class="project-description">
-                            <H2>Jumping Mountcastle Logo</H2>
-                            <h3>Design Project</h3>
-                         </div>
-                        
                     </div>
-                </a>
+            </div>
+        </section>
 
-                <div class="view-more-btn">
-                    <a href="/pages/projects.html">View More</a>
+        <!-- About Me Component -->
+
+        <section class="about">
+            <div class="container">
+                <div class="about-info text">
+                    <div class="about-text-container">
+                    <h1>/about</h1>
+                    <p>ith it installed in the code editor you are using, you can type “lorem” and then tab and it will expand into a paragraph of Lorem Ipsum placeholder text. But it can do more! You can control how much you get, place it within HTML structure as it expands, and get different bits of it in repeated elements.</p>
+                    </div>
+                    <div class="view-more-btn">
+                        <a href="/pages/about.html">View More</a>
+                    </div>
                 </div>
-
+                <div class="about-info img">
+                    <img src="assets/lewis-beer.jpeg" alt="Lewis drinking beer">
+                </div>
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- Projects Component -->
 
-    <!-- Blog Component -->
-
-    <section class="blog">
-        <div class="container">
-            <div class="blog-cards">
-                <h1>/blog</h1>
-                <a href="/pages/blog.html">
-                    <div class="blog-card">
-                        <div class="blog-img">
+        <section class="projects">
+            <div class="container">
+                <div class="project-cards">
+                    <h1>/projects</h1>
+                    <p>Some recent projects</p>
+                    <a href="/pages/projects.html">
+                        <div class="project-card">
                             <img src="assets/LH.png" alt="Image of LH logo">
+                            <div class="project-description">
+                                <h2>Lewis Hardie Logo</h2>
+                                <h3>Design Project</h3>
+                            </div>
                         </div>
-                        <div class="blog-description">
-                            <span>24 April 2005</span>
-                            <h2>blog-1</h2>
-                            <p>h it installed in the code editor you are using, you can type “lorem” and then tab and it will expand into a paragraph of Lorem Ipsum placeholder text. But it can do more! You can control how much you get, place it within HTML structure as it expands, and get different bits of it in repeated elements.</p>
+                    </a>
+                    <a href="/pages/projects.html">
+                        <div class="project-card">
+                            
+                            <img src="assets/JML.jpg" alt="image of JML logo">
+                            <div class="project-description">
+                                <H2>Jumping Mountcastle Logo</H2>
+                                <h3>Design Project</h3>
+                            </div>
+                            
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <div class="view-more-btn">
-                    <a href="/pages/blog.html">View More</a>
+                    <div class="view-more-btn">
+                        <a href="/pages/projects.html">View More</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Component -->
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog-cards">
+                    <h1>/blog</h1>
+                        <div class="blog-card 1">
+                            <a href="/pages/blog.html">
+                                <div class="blog-img">
+                                    <img src="assets/LH.png" alt="Image of LH logo">
+                                </div>
+                                <div class="blog-description">
+                                    <span>24 April 2005</span>
+                                    <h3>My Journey as a Web Developer</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="blog-card 2">
+                            <a href="/pages/blog.html">
+                                <div class="blog-img">
+                                    <img src="assets/JML.jpg" alt="Image of LH logo">
+                                </div>
+                                <div class="blog-description">
+                                    <span>24 Jan 2005</span>
+                                    <h3>blog-2</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                    <div class="view-more-btn">
+                        <a href="/pages/blog.html">View More</a>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- Contact Component -->
 
-    <!-- Contact Component -->
-
-    <section class="contact">
-        <div class="container">
-            <h1>/contact</h1>
-
-        </div>
-
-    </section>
-
-    <!-- Footer Component -->
-
-    <footer class="footer">
-        
-        <div class="footer-arrow">
-            <div class="gradient">
-                <a class="top" href="#top"><img src="/assets/arrow.png"></a>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                <h1>/contact</h1>
+                <p>Feel free to contact me anytime</p>
+                <form action="#" method="get" enctype="text/plain" class="contact-form" autocomplete="on">
+                    <div class="contact-form-input">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <span></span>
+                    </div>
+                    <div class="contact-form-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <span></span>
+                    </div>
+                    <div class="contact-form-input">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" required>
+                        <span></span>
+                    </div>
+                    <div class="contact-form-input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Write something.." rows="10" required></textarea>
+                    </div>
+                    <div class="contact-form-input">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
             </div>
-        </div>
-        <div class="footer-container">
-            <ul class="footer-links">
-                <li><a href="https://www.linkedin.com/in/lewishardie/"><img src="assets/linkedin.png" alt="Icon made by Pixel perfect from www.flaticon.com"</a></li>
-                <li><a href="https://github.com/Lewbagz"><img src="assets/Github.png" alt="Github"</a></li>
-                <li><a href="https://twitter.com/lewishardie"><img src="assets/Twitter.png" alt="Twitter"</a></li>
-                <li><a href="mailto:lewishardie@gmail.com"><img src="assets/email.png" alt="E-mail"></a></li>
-                <li><a href="/resume"><img src="assets/resume.png" alt="Resume"></a></li>
-            </ul>
-        </div>
+            </div>
 
+        </section>
 
+        <!-- Footer Component -->
 
-    
-    </footer>
-    
-</body>
+        <footer class="footer">
+            <div class="footer-arrow">
+                    <a class="top" href="#top"><img src="/assets/arrow.png"></a>
+            </div>
+            <div class="footer-container">
+                <ul class="footer-links">
+                    <li><a href="https://www.linkedin.com/in/lewishardie/"><img src="assets/linkedin.png" alt="Icon made by Pixel perfect from www.flaticon.com"</a></li>
+                    <li><a href="https://github.com/Lewbagz"><img src="assets/Github.png" alt="Github"</a></li>
+                    <li><a href="https://twitter.com/lewishardie"><img src="assets/Twitter.png" alt="Twitter"</a></li>
+                    <li><a href="mailto:lewishardie@gmail.com"><img src="assets/email.png" alt="E-mail"></a></li>
+                    <li><a href="/assets/LewisHardie_Resume.pdf"><img src="assets/resume.png" alt="Resume"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>

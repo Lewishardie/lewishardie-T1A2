@@ -1,6 +1,8 @@
 
 
-.view-more-btn {
+.view-more-btn, .contact-btn, .resume-btn {
+
+    color: $third-color;
     
     a {
         width: 8rem;
@@ -9,11 +11,66 @@
         justify-content: center;
         align-items: center;
         font-size: 1rem;
+        font-weight: 500;
         text-decoration: none;
-        background-color: $secondary-color;
-        color: $font-primary-color;
+        font-family: 'Geologica', sans-serif;
+        color: $third-color;
         border-radius: .5rem;
         background: $secondary-color;
         box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2); 
+        
+    }
+
+    a:hover {
+
+        background: darken($secondary-color, 15%);
+        color: $primary-color;
+        box-shadow: 0px 5px 5px rgba(193, 20, 241, 0.3), 0px 3px 10px rgba(152, 11, 181, 0.2);
+        transform: scale(1.1)
+    }
+
+    a:active {
+        background: $third-color;
+        color: white;
+        transform: translateY(2px);
+        transition: .1s;
+
     }
 }
+
+button {
+    
+    color: $third-color;
+    width: 8rem;
+    min-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Geologica', sans-serif;
+    text-decoration: none;
+    color: $third-color;
+    border-radius: .5rem;
+    border: 1px solid $third-color;
+    background: $secondary-color;
+    
+
+    button:hover {
+
+        background: darken($secondary-color, 25%);
+        color: $primary-color;
+        box-shadow: 0px 5px 5px rgba(193, 20, 241, 0.3), 0px 3px 10px rgba(152, 11, 181, 0.2);
+        transform: scale(1.1)
+    }
+
+    button:active {
+        background: $third-color;
+        color: white;
+        transform: translateY(2px);
+        transition: .1s;
+
+    }
+}
+
+

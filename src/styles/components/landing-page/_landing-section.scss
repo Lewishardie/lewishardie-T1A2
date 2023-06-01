@@ -1,53 +1,37 @@
 .landing {
     width: 100vw;
     border-bottom: 2px solid $nav-border;
-    
+
     .container {
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        
-  
+
         .landing-info.img{
 
             margin-bottom: 1rem;
                      
         }
     }
-
 }
 
 .landing-text-container {
 
     margin-bottom: 1rem;
     text-align: left;
-    
-    h1 {
-        
-        margin-bottom: 1rem;
-        font-size: 3rem;
-        font-weight: 400;
-    }
 
-    p {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
 }
 
 .landing-action-container {
+
     width: 80vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-
-    
 
     .contact-btn, .resume-btn {
 
@@ -57,29 +41,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $secondary-color;
-            color: $font-primary-color;
-            border-radius: .5rem;
-            text-decoration: none;
-            font-size: 1rem;
-            
-            box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2); 
-            
-        }
-
-        a:hover {
-            background-color: lighten($secondary-color, 10%);
-            color: $font-primary-color;
-
-        }
-
-        a:active {
-            background-color: $third-color;
-            color: white;
-            transform: translateY(2px);
-            transition: .1s;
 
         }
     }
-
 }

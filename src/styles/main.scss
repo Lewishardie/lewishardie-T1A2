@@ -4,7 +4,7 @@
 
 // navigation components
 
-@import 'components/navbar';
+@import 'components/header';
 @import 'components/footer';
 
 // media
@@ -18,6 +18,16 @@
 @import 'components/landing-page/landing-section.scss';
 @import 'components/landing-page/projects-section.scss';
 @import 'components/landing-page/blog-section';
+@import 'components/landing-page/contact-section';
 
-// button components
+// Button Components
 @import 'components/buttons';
+
+// Animation
+
+@import 'components/animation';
+
+// Font
+
+@import 'components/font';
+

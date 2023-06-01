@@ -1,0 +1,71 @@
+
+.header {
+    width: 100vw;
+    background-color: $third-color;
+   
+    // Nav containter
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        // Logo Component
+
+        .logo {
+            padding-top: 1rem;
+            padding-bottom: 1.2rem;
+
+        }
+            
+            // Navigation Component
+
+        .nav-bar {
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            list-style-type: none;
+            background-color: $secondary-color;
+                
+            //Nav links
+
+            li {
+                
+                width: 20vw;
+
+                // Indicates which web page is currently active
+                
+                .current-page {
+                    color: white;
+                    background-color: $third-color;
+                    border-top: 2px solid $secondary-color;
+                }
+                    
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-top: 2px solid $primary-color;
+                    border-bottom: 2px solid $primary-color;
+                    text-decoration: none;
+                    color: $primary-color;
+                    font-weight: bold;
+                    height: 5vh;
+                    transition: color .2s ease-in-out, box-shadow .2s ease-in-out, border-top .2s ease-in-out;
+                    
+                }
+
+                //Nav link hover animation
+
+                a:hover {
+                    color: white;
+                    box-shadow: inset 25vw 0 0 0 $third-color;
+                    border-top: 2px solid $secondary-color;
+                            
+                }
+            }
+        } 
+    }
+}
+

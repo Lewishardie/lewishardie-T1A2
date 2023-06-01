@@ -24,3 +24,7 @@ arrow.png - Icon made by Freepik from www.flaticon.com
 
 resume.png - Icon made by Freepik from www.flaticon.com
     - https://www.flaticon.com/free-icon/curriculum-vitae_909314
+
+### Fonts
+
+'Geologica' designed by Monokrom, Sindre Bremnes, Frode Helland
