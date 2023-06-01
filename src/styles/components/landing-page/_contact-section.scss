@@ -45,3 +45,103 @@
         }
     }
 }
+
+.contact-head {
+
+    width: 100vw;
+    border-bottom: 2px solid $nav-border;
+
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .head-text {
+
+            h1 {
+                font-size: 4rem;
+            }
+        }      
+    }
+}
+
+.socials {
+
+    width: 100vw;
+    border-bottom: 2px solid $nav-border;
+
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .social-wrapper {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+
+            a {
+                text-decoration: none;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: .7rem;
+            }
+
+            img {
+                width: 64px;
+                height: 64px;  
+            }
+            
+            .social-wrapper-left {
+
+                width: 100%;
+
+                .location, .phone, .email {
+
+                    margin-bottom: 2rem;
+                        
+                    .location-container, .phone-container, a{
+                            
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        .location-text, .phone-text, .email-text {
+                            padding-left: 1rem;
+                            color: black;
+
+                        }
+                    }
+                }
+            }
+            
+
+            .social-wrapper-right {
+
+                    width: 100%;
+                    
+
+                .linkedin, .github, .twitter {
+
+                    margin-bottom: 2rem;
+
+                    a { 
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        
+                        .linkedin-text, .github-text, .twitter-text {
+                            padding-left: 1rem;
+                            color: black;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

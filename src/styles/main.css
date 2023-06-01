@@ -12,7 +12,6 @@
 }
 
 h1 {
-  margin-bottom: 0.5rem;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -29,7 +28,6 @@ h3 {
 
 p {
   font-size: 1rem;
-  margin-bottom: 1rem;
 }
 
 .header {
@@ -156,6 +154,11 @@ p {
      object-fit: cover;
 }
 
+.socials img {
+  width: 32px;
+  height: 32px;
+}
+
 .footer img {
   width: 64px;
   height: 64px;
@@ -214,31 +217,84 @@ p {
   flex-direction: column;
   justify-content: space-between;
 }
-.skills .container .skills-container .bar-wrapper .bar-container h3 {
+.skills .container .skills-container .bar-wrapper .bar-container .bar-text {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .bar-text h3 {
   padding-bottom: 0.5rem;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .html-bg {
+  background-color: #f5976f;
+  border: 2px solid #a23c10;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .css-bg {
+  background-color: #5e8bf2;
+  border: 2px solid #0d389c;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .javascript-bg {
+  background-color: #f9e4a6;
+  border: 2px solid #E4A126;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .illustrator-bg {
+  background-color: #e9a37d;
+  border: 2px solid #3c240c;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .photoshop-bg {
+  background-color: #5695c7;
+  border: 2px solid #072F5F;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .after-effects-bg {
+  background-color: #eeccfe;
+  border: 2px solid #393665;
 }
 .skills .container .skills-container .bar-wrapper .bar-container .bar {
   width: 100%;
-  height: 1vh;
   border-radius: 2rem;
   margin-bottom: 0.5rem;
-  background-color: gray;
   overflow: hidden;
 }
 .skills .container .skills-container .bar-wrapper .bar-container .html {
   width: 20%;
   height: 1vh;
-  background-color: green;
-  text-align: right;
-  color: white;
-  border-right: 2px solid rgb(0, 98, 0);
+  background-color: #f06529;
+  border-radius: 2rem;
+  border-right: 3px solid #a23c10;
 }
 .skills .container .skills-container .bar-wrapper .bar-container .css {
   width: 10%;
-  background-color: red;
-  text-align: right;
-  color: white;
-  border-right: 2px solid rgb(161, 0, 0);
+  height: 1vh;
+  background-color: #2965f1;
+  border-radius: 2rem;
+  border-right: 3px solid #0d389c;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .javascript {
+  width: 0%;
+  height: 1vh;
+  background-color: #F0BE25;
+  border-radius: 2rem;
+  border-right: 3px solid #E4A126;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .illustrator {
+  width: 60%;
+  height: 1vh;
+  background-color: #f88d29;
+  border-radius: 2rem;
+  border-right: 3px solid #3c240c;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .photoshop {
+  width: 40%;
+  height: 1vh;
+  background-color: #1261A0;
+  border-radius: 2rem;
+  border-right: 3px solid #072F5F;
+}
+.skills .container .skills-container .bar-wrapper .bar-container .after-effects {
+  width: 50%;
+  height: 1vh;
+  background-color: #CF96FD;
+  border-radius: 2rem;
+  border-right: 3px solid #393665;
 }
 .skills .container .skills-container .bar-wrapper .info-container {
   margin-bottom: 1rem;
@@ -414,6 +470,76 @@ p {
   padding: 0.5rem;
   border: 1px solid #9429cc;
   border-radius: 4px;
+}
+
+.contact-head {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.contact-head .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.contact-head .container .head-text h1 {
+  font-size: 4rem;
+}
+
+.socials {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.socials .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.socials .container .social-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+.socials .container .social-wrapper a {
+  text-decoration: none;
+}
+.socials .container .social-wrapper h2 {
+  font-size: 2rem;
+}
+.socials .container .social-wrapper p {
+  font-size: 0.7rem;
+}
+.socials .container .social-wrapper img {
+  width: 64px;
+  height: 64px;
+}
+.socials .container .social-wrapper .social-wrapper-left {
+  width: 100%;
+}
+.socials .container .social-wrapper .social-wrapper-left .location, .socials .container .social-wrapper .social-wrapper-left .phone, .socials .container .social-wrapper .social-wrapper-left .email {
+  margin-bottom: 2rem;
+}
+.socials .container .social-wrapper .social-wrapper-left .location .location-container, .socials .container .social-wrapper .social-wrapper-left .location .phone-container, .socials .container .social-wrapper .social-wrapper-left .location a, .socials .container .social-wrapper .social-wrapper-left .phone .location-container, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container, .socials .container .social-wrapper .social-wrapper-left .phone a, .socials .container .social-wrapper .social-wrapper-left .email .location-container, .socials .container .social-wrapper .social-wrapper-left .email .phone-container, .socials .container .social-wrapper .social-wrapper-left .email a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.socials .container .social-wrapper .social-wrapper-left .location .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location a .location-text, .socials .container .social-wrapper .social-wrapper-left .location a .phone-text, .socials .container .social-wrapper .social-wrapper-left .location a .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone a .location-text, .socials .container .social-wrapper .social-wrapper-left .phone a .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone a .email-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email a .location-text, .socials .container .social-wrapper .social-wrapper-left .email a .phone-text, .socials .container .social-wrapper .social-wrapper-left .email a .email-text {
+  padding-left: 1rem;
+  color: black;
+}
+.socials .container .social-wrapper .social-wrapper-right {
+  width: 100%;
+}
+.socials .container .social-wrapper .social-wrapper-right .linkedin, .socials .container .social-wrapper .social-wrapper-right .github, .socials .container .social-wrapper .social-wrapper-right .twitter {
+  margin-bottom: 2rem;
+}
+.socials .container .social-wrapper .social-wrapper-right .linkedin a, .socials .container .social-wrapper .social-wrapper-right .github a, .socials .container .social-wrapper .social-wrapper-right .twitter a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.socials .container .social-wrapper .social-wrapper-right .linkedin a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .github-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .github a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .github a .github-text, .socials .container .social-wrapper .social-wrapper-right .github a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .github-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .twitter-text {
+  padding-left: 1rem;
+  color: black;
 }
 
 .view-more-btn, .contact-btn, .resume-btn {

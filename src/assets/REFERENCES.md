@@ -25,6 +25,14 @@ arrow.png - Icon made by Freepik from www.flaticon.com
 resume.png - Icon made by Freepik from www.flaticon.com
     - https://www.flaticon.com/free-icon/curriculum-vitae_909314
 
+location.png - Icon made by These Icons from www.flaticon.com
+    - https://www.flaticon.com/free-icon/pin_484167
+    <a href="https://www.flaticon.com/free-icons/pin" title="pin icons">Pin icons created by Those Icons - Flaticon</a>
+
+phone.png - Icon made by Creaticca Creative Agency from Flaticon
+    https://www.flaticon.com/free-icon/phone-call_455705
+<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Creaticca Creative Agency - Flaticon</a>
+
 ### Fonts
 
 'Geologica' designed by Monokrom, Sindre Bremnes, Frode Helland

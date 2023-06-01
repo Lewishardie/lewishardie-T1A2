@@ -69,45 +69,122 @@
                 justify-content: space-between;
 
                 .bar-container {
-                
-                    h3 {
-                        padding-bottom: .5rem;
+                    
+                    .bar-text {
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        h3 {
+                            padding-bottom: .5rem;
+                        }
+                    }
+                    
+                    .html-bg {
+
+                        background-color: #f5976f;
+                        border: 2px solid #a23c10;
+                    }
+
+                    .css-bg {
+
+                        background-color: #5e8bf2;
+                        border: 2px solid #0d389c;
+                    }
+
+                    .javascript-bg {
+
+                        background-color: #f9e4a6;
+                        border: 2px solid #E4A126;
+                    }
+
+                    .illustrator-bg {
+
+                        background-color: #e9a37d;
+                        border: 2px solid #3c240c;
+                    }
+
+                    .photoshop-bg {
+
+                        background-color: #5695c7;
+                        border: 2px solid #072F5F;
+                    }
+
+                    .after-effects-bg {
+
+                        background-color: #eeccfe;
+                        border: 2px solid #393665;
                     }
 
                     .bar {
                         
                         width: 100%;
-                        height: 1vh;
                         border-radius: 2rem;
                         margin-bottom: .5rem;
-                        background-color: gray;
                         overflow: hidden;
-
                     }
 
                     .html {
 
                         width: 20%;
                         height: 1vh;
-                        background-color: green;
-                        text-align: right;
-                        color: white;
-                        border-right: 2px solid rgb(0, 98, 0);
+                        background-color: #f06529;
+                        border-radius: 2rem;
+                        border-right: 3px solid #a23c10;
 
                     }
 
                     .css {
                         width: 10%;
-                        background-color: red;
-                        text-align: right;
-                        color: white;
-                        border-right: 2px solid rgb(161, 0, 0);
+                        height: 1vh;
+                        background-color: #2965f1;
+                        border-radius: 2rem;
+                        border-right: 3px solid #0d389c;
+
+                    }
+
+                    .javascript {
+                        
+                        width: 0%;
+                        height: 1vh;
+                        background-color: #F0BE25;
+                        border-radius: 2rem;
+                        border-right: 3px solid #E4A126;
+
+                    }
+
+                    .illustrator {
+                        
+                        width: 60%;
+                        height: 1vh;
+                        background-color: #f88d29;
+                        border-radius: 2rem;
+                        border-right: 3px solid #3c240c;
+
+                    }
+
+                    .photoshop {
+                        
+                        width: 40%;
+                        height: 1vh;
+                        background-color: #1261A0;
+                        border-radius: 2rem;
+                        border-right: 3px solid #072F5F;
+
+                    }
+
+                    .after-effects {
+                        
+                        width: 50%;
+                        height: 1vh;
+                        background-color: #CF96FD;
+                        border-radius: 2rem;
+                        border-right: 3px solid #393665;
 
                     }
                 }
         
                 .info-container {
-        
                     margin-bottom: 1rem;
                     background-color: red;
 
