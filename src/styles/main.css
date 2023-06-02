@@ -135,7 +135,7 @@ p {
 .about {
   width: 80vw;
 }
-.about .about-info img {
+.about .about-main-img, .about .about-img {
   width: 100%;
   border-radius: 4px;
   border: 1px solid #3e1647;
@@ -144,7 +144,16 @@ p {
 .projects {
   width: 80vw;
 }
-.projects .project-card img {
+.projects .projects-section-img {
+  width: 100%;
+  height: 20vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #3e1647;
+}
+
+.projects-main .projects-main-img {
   width: 100%;
   height: 20vh;
   -o-object-fit: cover;
@@ -209,17 +218,40 @@ p {
   height: 32px;
 }
 
+.about-head {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.about-head .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.about-head .container .head-text h1 {
+  padding-bottom: 1rem;
+}
+
 .about {
   width: 100vw;
   background-color: #f1ddfc;
   border-bottom: 2px solid #570d80;
 }
 .about h2 {
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #9429cc;
+}
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 .about .container {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -244,12 +276,19 @@ p {
 .skills {
   border-bottom: 2px solid #570d80;
 }
+.skills h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 .skills .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.skills .container .info-container {
+  margin-bottom: 1rem;
 }
 .skills .container .skills-container {
   display: flex;
@@ -264,9 +303,6 @@ p {
 .skills .container .skills-container .bar-wrapper .bar-container .bar-text {
   display: flex;
   justify-content: space-between;
-}
-.skills .container .skills-container .bar-wrapper .bar-container .bar-text h3 {
-  padding-bottom: 0.5rem;
 }
 .skills .container .skills-container .bar-wrapper .bar-container .html-bg {
   background-color: #f5976f;
@@ -400,10 +436,13 @@ p {
   border-bottom: 2px solid #570d80;
 }
 .projects h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .projects h3 {
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
+}
+.projects p {
+  margin-bottom: 1rem;
 }
 .projects .container {
   display: flex;
@@ -436,13 +475,56 @@ p {
   justify-content: right;
 }
 
+.projects-main {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.projects-main h3 {
+  margin-bottom: 0.2rem;
+}
+.projects-main .container {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.projects-main .container .project-cards {
+  width: 100%;
+}
+.projects-main .container .project-cards .view-more-btn {
+  display: flex;
+  justify-content: center;
+}
+.projects-main .container .project-cards .project-description {
+  text-align: left;
+  padding: 1rem;
+}
+.projects-main .container .project-cards .project-card {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blog-head {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.blog-head .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.blog-head .container .head-text h1 {
+  padding-bottom: 1rem;
+}
+
 .blog {
   width: 100vw;
   background-color: #f1ddfc;
   border-bottom: 2px solid #570d80;
 }
 .blog h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .blog h4 {
   padding-top: 0.5rem;
@@ -496,142 +578,6 @@ p {
 .blog .container .view-more-btn {
   display: flex;
   justify-content: right;
-}
-
-.contact-head {
-  width: 100vw;
-  border-bottom: 2px solid #570d80;
-}
-.contact-head .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.contact-head .container .head-text h1 {
-  padding-bottom: 1rem;
-}
-
-.contact {
-  width: 100vw;
-  border-bottom: 2px solid #570d80;
-}
-.contact h2 {
-  padding-bottom: 0.5rem;
-}
-.contact .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.contact .container .contact-wrapper {
-  width: 100%;
-}
-.contact .container .contact-wrapper .contact-form {
-  margin-top: 1rem;
-  background: #f1ddfc;
-  padding: 1rem 1rem;
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
-}
-.contact .container .contact-wrapper .contact-form .contact-form-input {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-  margin: 0 auto;
-}
-.contact .container .contact-wrapper .contact-form .contact-form-input label {
-  font-size: 1rem;
-  font-weight: 400;
-}
-.contact .container .contact-wrapper .contact-form .contact-form-input input, .contact .container .contact-wrapper .contact-form .contact-form-input textarea {
-  margin-top: 0.5rem;
-  padding: 0.5rem;
-  border: 1px solid #9429cc;
-  border-radius: 4px;
-}
-
-.socials {
-  width: 100vw;
-  border-bottom: 2px solid #570d80;
-}
-.socials a {
-  text-decoration: none;
-}
-.socials h2 {
-  font-size: 2.5rem;
-}
-.socials h3 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-.socials p {
-  font-size: 0.7rem;
-}
-.socials .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.socials .container .social-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: space-between;
-}
-.socials .container .social-wrapper .social-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #9429cc;
-}
-.socials .container .social-wrapper .social-img .img-name {
-  padding-top: 1rem;
-}
-.socials .container .social-wrapper .social-wrapper-left {
-  width: 100%;
-}
-.socials .container .social-wrapper .social-wrapper-left .location, .socials .container .social-wrapper .social-wrapper-left .phone, .socials .container .social-wrapper .social-wrapper-left .email {
-  margin-bottom: 2rem;
-}
-.socials .container .social-wrapper .social-wrapper-left .location .location-container, .socials .container .social-wrapper .social-wrapper-left .location .phone-container, .socials .container .social-wrapper .social-wrapper-left .location a, .socials .container .social-wrapper .social-wrapper-left .phone .location-container, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container, .socials .container .social-wrapper .social-wrapper-left .phone a, .socials .container .social-wrapper .social-wrapper-left .email .location-container, .socials .container .social-wrapper .social-wrapper-left .email .phone-container, .socials .container .social-wrapper .social-wrapper-left .email a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.socials .container .social-wrapper .social-wrapper-left .location .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location a .location-text, .socials .container .social-wrapper .social-wrapper-left .location a .phone-text, .socials .container .social-wrapper .social-wrapper-left .location a .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone a .location-text, .socials .container .social-wrapper .social-wrapper-left .phone a .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone a .email-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email a .location-text, .socials .container .social-wrapper .social-wrapper-left .email a .phone-text, .socials .container .social-wrapper .social-wrapper-left .email a .email-text {
-  padding-left: 1rem;
-  color: black;
-}
-.socials .container .social-wrapper .social-wrapper-right {
-  width: 100%;
-}
-.socials .container .social-wrapper .social-wrapper-right .linkedin, .socials .container .social-wrapper .social-wrapper-right .github, .socials .container .social-wrapper .social-wrapper-right .twitter {
-  margin-bottom: 2rem;
-}
-.socials .container .social-wrapper .social-wrapper-right .linkedin a, .socials .container .social-wrapper .social-wrapper-right .github a, .socials .container .social-wrapper .social-wrapper-right .twitter a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.socials .container .social-wrapper .social-wrapper-right .linkedin a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .github-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .github a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .github a .github-text, .socials .container .social-wrapper .social-wrapper-right .github a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .github-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .twitter-text {
-  padding-left: 1rem;
-  color: black;
-}
-
-.blog-head {
-  width: 100vw;
-  border-bottom: 2px solid #570d80;
-}
-.blog-head .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.blog-head .container .head-text h1 {
-  padding-bottom: 1rem;
 }
 
 .blog-main {
@@ -764,6 +710,130 @@ p {
 }
 .blog-page .container .blog-container .view-more-btn {
   margin-top: 1rem;
+}
+
+.contact-head {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.contact-head .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.contact-head .container .head-text h1 {
+  padding-bottom: 1rem;
+}
+
+.contact {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.contact h2 {
+  padding-bottom: 1rem;
+}
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.contact .container .contact-wrapper {
+  width: 100%;
+}
+.contact .container .contact-wrapper .contact-form {
+  margin-top: 1rem;
+  background: #f1ddfc;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.contact .container .contact-wrapper .contact-form .contact-form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+.contact .container .contact-wrapper .contact-form .contact-form-input label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contact .container .contact-wrapper .contact-form .contact-form-input input, .contact .container .contact-wrapper .contact-form .contact-form-input textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #9429cc;
+  border-radius: 4px;
+}
+
+.socials {
+  width: 100vw;
+  border-bottom: 2px solid #570d80;
+}
+.socials a {
+  text-decoration: none;
+}
+.socials h2 {
+  font-size: 2.5rem;
+}
+.socials h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.socials p {
+  font-size: 0.7rem;
+}
+.socials .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.socials .container .social-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+}
+.socials .container .social-wrapper .social-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #9429cc;
+}
+.socials .container .social-wrapper .social-img .img-name {
+  padding-top: 1rem;
+}
+.socials .container .social-wrapper .social-wrapper-left {
+  width: 100%;
+}
+.socials .container .social-wrapper .social-wrapper-left .location, .socials .container .social-wrapper .social-wrapper-left .phone, .socials .container .social-wrapper .social-wrapper-left .email {
+  margin-bottom: 2rem;
+}
+.socials .container .social-wrapper .social-wrapper-left .location .location-container, .socials .container .social-wrapper .social-wrapper-left .location .phone-container, .socials .container .social-wrapper .social-wrapper-left .location a, .socials .container .social-wrapper .social-wrapper-left .phone .location-container, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container, .socials .container .social-wrapper .social-wrapper-left .phone a, .socials .container .social-wrapper .social-wrapper-left .email .location-container, .socials .container .social-wrapper .social-wrapper-left .email .phone-container, .socials .container .social-wrapper .social-wrapper-left .email a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.socials .container .social-wrapper .social-wrapper-left .location .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location a .location-text, .socials .container .social-wrapper .social-wrapper-left .location a .phone-text, .socials .container .social-wrapper .social-wrapper-left .location a .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone a .location-text, .socials .container .social-wrapper .social-wrapper-left .phone a .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone a .email-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email a .location-text, .socials .container .social-wrapper .social-wrapper-left .email a .phone-text, .socials .container .social-wrapper .social-wrapper-left .email a .email-text {
+  padding-left: 1rem;
+  color: black;
+}
+.socials .container .social-wrapper .social-wrapper-right {
+  width: 100%;
+}
+.socials .container .social-wrapper .social-wrapper-right .linkedin, .socials .container .social-wrapper .social-wrapper-right .github, .socials .container .social-wrapper .social-wrapper-right .twitter {
+  margin-bottom: 2rem;
+}
+.socials .container .social-wrapper .social-wrapper-right .linkedin a, .socials .container .social-wrapper .social-wrapper-right .github a, .socials .container .social-wrapper .social-wrapper-right .twitter a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.socials .container .social-wrapper .social-wrapper-right .linkedin a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .github-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .github a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .github a .github-text, .socials .container .social-wrapper .social-wrapper-right .github a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .github-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .twitter-text {
+  padding-left: 1rem;
+  color: black;
 }
 
 .view-more-btn, .contact-btn, .resume-btn {

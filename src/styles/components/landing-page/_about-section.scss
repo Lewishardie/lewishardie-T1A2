@@ -1,4 +1,21 @@
-// About me Component for Index and About
+.about-head {
+
+    width: 100vw;
+    border-bottom: 2px solid $nav-border;
+
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .head-text {
+            
+            h1 {
+                padding-bottom: 1rem;
+            }
+        }
+ 
+    }
+}
 
 .about {
     width: 100vw;
@@ -6,16 +23,32 @@
     border-bottom: 2px solid $nav-border;
 
     h2 {
-        margin-bottom: .5rem;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $third-color;
     }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
 
     .container {
         
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
+
+        
 
         .about-info.img {
 
@@ -25,7 +58,7 @@
         .about-info {
 
             width: 100%;
-                
+            
             .about-text-container {
                 
                 display: flex;
@@ -39,8 +72,6 @@
 
                 display: flex;
                 justify-content: right;
-
-                
             }
         }
     }
@@ -52,6 +83,11 @@
 
     border-bottom: 2px solid $nav-border;
 
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
     .container {
 
         display: flex;
@@ -59,6 +95,11 @@
         align-items: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
+
+        .info-container {
+
+            margin-bottom: 1rem;
+        }
         
         .skills-container {
 
@@ -79,9 +120,6 @@
                         display: flex;
                         justify-content: space-between;
 
-                        h3 {
-                            padding-bottom: .5rem;
-                        }
                     }
                     
                     .html-bg {
