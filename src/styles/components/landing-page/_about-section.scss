@@ -5,6 +5,10 @@
     background-color: lighten($primary-color, 65%);
     border-bottom: 2px solid $nav-border;
 
+    h2 {
+        margin-bottom: .5rem;
+    }
+
     .container {
         
         display: flex;

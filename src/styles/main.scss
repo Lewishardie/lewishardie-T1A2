@@ -2,29 +2,33 @@
 @import 'components/default';
 @import 'components/colors';
 
-// navigation components
 
+// navigation components
 @import 'components/header';
 @import 'components/footer';
 
-// media
 
+// media
 @import 'components/images';
 
 
 // landing page components 
-
-@import 'components/landing-page/about-section.scss';
-@import 'components/landing-page/landing-section.scss';
-@import 'components/landing-page/projects-section.scss';
+@import 'components/landing-page/about-section';
+@import 'components/landing-page/landing-section';
+@import 'components/landing-page/projects-section';
 @import 'components/landing-page/blog-section';
 @import 'components/landing-page/contact-section';
+
+
+// blog page component
+@import 'components/blog-main';
+
 
 // Button Components
 @import 'components/buttons';
 
-// Animation
 
+// Animation
 @import 'components/animation';
 
 // Font

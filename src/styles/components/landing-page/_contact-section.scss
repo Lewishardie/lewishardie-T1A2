@@ -1,6 +1,30 @@
+.contact-head {
+
+    width: 100vw;
+    border-bottom: 2px solid $nav-border;
+
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .head-text {
+            
+            h1 {
+                padding-bottom: 1rem;
+            }
+        }
+ 
+    }
+}
+
 .contact {
     width: 100vw;
     border-bottom: 2px solid $nav-border;
+
+    h2 {
+        padding-bottom: 0.5rem;
+        
+    }
 
     .container {
         display: flex;
@@ -15,6 +39,7 @@
             width: 100%;
 
             .contact-form {
+                margin-top: 1rem;
                 background: lighten($primary-color, 65%);
                 padding: 1rem 1rem;
                 border-radius: 10px;
@@ -46,28 +71,30 @@
     }
 }
 
-.contact-head {
 
-    width: 100vw;
-    border-bottom: 2px solid $nav-border;
-
-    .container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-
-        .head-text {
-
-            h1 {
-                font-size: 4rem;
-            }
-        }      
-    }
-}
 
 .socials {
 
     width: 100vw;
     border-bottom: 2px solid $nav-border;
+
+    a {
+        text-decoration: none;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        
+    }
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: .7rem;
+    }
+
 
     .container {
         padding-top: 2rem;
@@ -80,22 +107,22 @@
             justify-content: center;
             align-content: space-between;
 
-            a {
-                text-decoration: none;
-            }
-            h2 {
-                font-size: 2rem;
+           
+            .social-img {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                align-items: center;
+                margin-bottom: 2rem;
+                border-bottom: 2px solid $third-color;
+
+                .img-name {
+                    padding-top: 1rem;
+                }
+
             }
 
-            p {
-                font-size: .7rem;
-            }
-
-            img {
-                width: 64px;
-                height: 64px;  
-            }
-            
             .social-wrapper-left {
 
                 width: 100%;

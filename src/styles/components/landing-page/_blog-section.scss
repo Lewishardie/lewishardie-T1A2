@@ -1,7 +1,25 @@
 .blog {
+
     width: 100vw;
     background-color: lighten($primary-color, 65%);
     border-bottom: 2px solid $nav-border;
+
+    h2 {
+        margin-bottom: .5rem;
+    }
+
+    h4 {
+        
+        padding-top: .5rem;
+
+    }
+
+    span {
+        font-size: .7rem;
+        font-weight: 100;
+        font-style: italic;
+        
+    }
 
     .container {
         
@@ -34,17 +52,6 @@
                         text-align: left;
                         padding-left: 1rem;
 
-                        h3 {
-                            padding-top: .8rem;
-                        
-                        }
-
-                        span {
-                            font-size: .7rem;
-                            font-weight: 100;
-                            font-style: italic;
-                            
-                        }
                     }
 
                     .blog-img {
