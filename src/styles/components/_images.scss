@@ -2,7 +2,6 @@
     a {
 
         img {
-            
             width: 100px;
             height: 100px;
             border-radius: 50px;
@@ -17,10 +16,14 @@
     width: 80vw;
 
     .landing-info {
+        
         img {
+            height: 40vh;
             width: 100%;
             border-radius: 4px;
             border: 1px solid $font-primary-color;
+            object-fit: cover;
+            object-position: 100% 20;
         }
     }
 }
@@ -29,9 +32,12 @@
     width: 80vw;
 
     .about-main-img, .about-img {
-            width: 100%;
-            border-radius: 4px;
-            border: 1px solid $font-primary-color;
+        height: 30vh;
+        width: 100%;
+        border-radius: 4px;
+        border: 1px solid $font-primary-color;
+        object-fit: cover;
+        object-position: 100% 0;
 
     }
 }
@@ -128,14 +134,19 @@
 
 
 .footer {
-    
-    img {
-        width: 64px;
-        height: 64px;
+
+    .footer-arrow {
+
+        img {
+            width: 64px;
+            height: 64px;
+        }
     }
 
-    ul img {
-        width: 32px;
-        height: 32px;
+    .footer-container {
+        ul img {
+            width: 32px;
+            height: 32px;
+        }
     }
 }

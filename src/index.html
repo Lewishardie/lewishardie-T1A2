@@ -58,17 +58,23 @@
 
         <section class="about">
             <div class="container">
-                <div class="about-info text">
-                    <h2>/about</h2>
-                    <div class="about-info img">
+                <div class="about-container">
+
+                    <div class="about-title">
+                        <h2>/about</h2>
+                        </div>
+                    <div class="about-content">
+                    <div class="about-img-container">
                         <img src="assets/lewis-beer.jpeg" alt="Lewis drinking beer" class="about-img">
                     </div>
                     <div class="about-text-container">
+                    <h4>I'm a Web Developer based in rainy Melbourne, Australia.</h4>
                     <p>ith it installed in the code editor you are using, you can type “lorem” and then tab and it will expand into a paragraph of Lorem Ipsum placeholder text. But it can do more! You can control how much you get, place it within HTML structure as it expands, and get different bits of it in repeated elements.</p>
                     <div class="view-more-btn">
                         <a href="/pages/about.html">View More</a>
                     </div>
                 </div>
+                    </div>
                 </div>
                 
                
@@ -80,29 +86,41 @@
 
         <section class="projects">
             <div class="container">
-                <div class="project-cards">
+                <div class="project-container">
+                    <div class="project-title">
                     <h2>/projects</h2>
                     <p>Some recent projects</p>
-                    <a href="/pages/projects.html">
-                        <div class="project-card">
+                    </div>
+                    <div class="project-cards">
+                    <div class="project-card one">
+                        <a href="/pages/projects.html">
+                            <div class="project-card-container">
+                            <div class="project-img">
                             <img src="assets/LH.png" alt="Image of LH logo" class="projects-section-img">
+                            </div>
                             <div class="project-description">
                                 <h3>Lewis Hardie Logo</h3>
                                 <h4>Design Project</h4>
                             </div>
-                        </div>
-                    </a>
-                    <a href="/pages/projects.html">
-                        <div class="project-card">
-                            
-                            <img src="assets/JML.jpg" alt="image of JML logo" class="projects-section-img">
-                            <div class="project-description">
-                                <H3>Jumping Mountcastle Logo</H3>
-                                <h4>Design Project</h4>
                             </div>
-                            
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    
+                    <div class="project-card two">
+                        <a href="/pages/projects.html">
+                            <div class="project-card-container">
+                                <div class="project-img">
+                                    <img src="assets/JML.jpg" alt="image of JML logo" class="projects-section-img">
+                                </div>
+                                <div class="project-description">
+                                    <H3>Jumping Mountcastle Logo</H3>
+                                    <h4>Design Project</h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    </div>
 
                     <div class="view-more-btn">
                         <a href="/pages/projects.html">View More</a>
@@ -116,9 +134,13 @@
 
         <section class="blog">
             <div class="container">
-                <div class="blog-cards">
-                    <h2>/blog</h2>
-                        <div class="blog-card 1">
+                <div class="blog-container">
+                    <div class="blog-title">
+                        <h2>/blog</h2>
+                        <p>Read some of my thoughts.</p>
+                    </div>
+                    <div class="blog-cards">
+                        <div class="blog-card one">
                             <a href="/pages/blog/blog-1.html">
                                 <div class="blog-img">
                                     <img src="assets/LH.png" alt="Image of LH logo" class="blog-section-img">
@@ -129,18 +151,30 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="blog-card 2">
+                        <div class="blog-card two">
                             <a href="/pages/blog/blog-2.html">
-                                <div class="blog-img">
-                                    <img src="assets/JML.jpg" alt="Image of LH logo" class="blog-section-img">
-                                </div>
-                                <div class="blog-description">
-                                    <span>24 Jan 2005</span>
-                                    <h4>blog-2</h4>
-                                </div>
+                                    <div class="blog-img">
+                                        <img src="assets/JML.jpg" alt="Image of LH logo" class="blog-section-img">
+                                    </div>
+                                    <div class="blog-description">
+                                        <span>24 Jan 2005</span>
+                                        <h4>blog-2</h4>
+                                    </div>
                             </a>
                         </div>
-
+                        <div class="blog-card three">
+                            <a href="/pages/blog/blog-3.html">
+                                    <div class="blog-img">
+                                        <img src="assets/ballso.png" alt="Image of Ball So Hardie logo" class="blog-section-img">
+                                    </div>
+                                    <div class="blog-description">
+                                        <span>24 Jan 2005</span>
+                                        <h4>blog-3</h4>
+                                    </div>
+                            </a>
+                        </div>
+                    </div>
+                    
                     <div class="view-more-btn">
                         <a href="/pages/blog.html">View More</a>
                     </div>
@@ -155,33 +189,39 @@
 
         <section class="contact">
             <div class="container">
-                <div class="contact-wrapper">
-                <h2>/contact</h2>
-                <p>Feel free to contact me anytime</p>
-                <form action="#" method="get" enctype="text/plain" class="contact-form" autocomplete="on">
-                    <div class="contact-form-input">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" required>
-                        <span></span>
+                <div class="contact-container">
+                    <div class="contact-title">
+                        <h2>/contact</h2>
+                        <p>Feel free to contact me anytime</p>
                     </div>
-                    <div class="contact-form-input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                        <span></span>
+                <div class="contact-form-container">
+                    <div class="contact-form">
+                    <form action="#" method="get" enctype="text/plain" autocomplete="on">
+                        <div class="contact-form-input">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required>
+                            <span></span>
+                        </div>
+                        <div class="contact-form-input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                            <span></span>
+                        </div>
+                        <div class="contact-form-input">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" required>
+                            <span></span>
+                        </div>
+                        <div class="contact-form-input">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Write something.." rows="10" required></textarea>
+                        </div>
+                        <div class="contact-form-input">
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+                    </form>
                     </div>
-                    <div class="contact-form-input">
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" required>
-                        <span></span>
-                    </div>
-                    <div class="contact-form-input">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Write something.." rows="10" required></textarea>
-                    </div>
-                    <div class="contact-form-input">
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </div>
-                </form>
+                </div>
             </div>
             </div>
 

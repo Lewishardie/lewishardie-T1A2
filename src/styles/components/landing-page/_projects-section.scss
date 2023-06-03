@@ -23,6 +23,7 @@
 
     h2 {
         margin-bottom: 1rem;
+        border-bottom: 2px solid $third-color;
     }
 
     h3 {
@@ -40,39 +41,47 @@
         padding-top: 2rem;
         padding-bottom: 2rem;
         
-        .project-cards {
+        .project-container {
             
             width: 100%;
             
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
-
-            .project-description {
-
-                text-align: left;
-                padding: 1rem;
-
-            }
             
-            .project-card {
+            .project-cards {
 
-                margin-bottom: 2rem;
-                padding: 1rem;
-                border-radius: 4px;
-                box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
-            }
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                }
 
-            a .project-card:hover {
-                box-shadow: 0px 5px 10px 5px rgba(193, 20, 241, 0.3), 0px 3px 15px 2px rgba(152, 11, 181, 0.2);
+                .project-description {
+
+                    text-align: left;
+                    padding: 1rem;
+
+                }
+                
+                .project-card {
+
+                    .project-card-container {
+                        margin-bottom: 2rem;
+                        padding: 1rem;
+                        border-radius: 4px;
+                        box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+    
+                    }
+                }
+
+                .project-card-container:hover {
+                    box-shadow: 0px 5px 10px 5px rgba(193, 20, 241, 0.3), 0px 3px 15px 2px rgba(152, 11, 181, 0.2);
+                }
             }
-        }
         
-        .view-more-btn {
-            display: flex;
-            justify-content: right;
+        
+            .view-more-btn {
+                display: flex;
+                justify-content: right;
 
+            }
         }
     }
 }

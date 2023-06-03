@@ -24,12 +24,17 @@
 
     h2 {
         margin-bottom: 1rem;
+        border-bottom: 2px solid $third-color;
     }
 
     h4 {
         
         padding-top: .5rem;
 
+    }
+
+    p {
+        margin-bottom: 1rem;
     }
 
     span {
@@ -42,60 +47,67 @@
     .container {
         
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: left;
         padding-top: 2rem;
         padding-bottom: 2rem;
 
-        .blog-cards {
-            width: 100%;
+        .blog-container {
 
-        }
-            .blog-card {
-                border: 0px solid $third-color;
-                border-radius: 5px 15px 5px 30px;
-                background-color: white;
-                margin-bottom: 2rem;
-                overflow: hidden;
-                box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+            
 
-                a {
-                    display: flex;
-                    flex-direction: row;
-                    text-decoration: none;
-                    color: inherit;
-                    
-                    .blog-description {  
-                        
-                        width: 100%;
-                        text-align: left;
-                        padding-left: 1rem;
+            .blog-cards {
 
-                    }
+                width: 100%;
 
-                    .blog-img {
-                    
+                .blog-card {
+                    border: 0px solid $third-color;
+                    border-radius: 5px 15px 5px 30px;
+                    background-color: white;
+                    margin-bottom: 2rem;
+                    overflow: hidden;
+                    box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
+
+                    a {
                         display: flex;
-                        height: 15vh;
-                        width: 100%;
-                        overflow: hidden;
-                        object-fit: clip;
+                        flex-direction: row;
+                        text-decoration: none;
+                        color: inherit;
+                        
+                        .blog-description {  
+                            
+                            width: 100%;
+                            text-align: left;
+                            padding-left: 1rem;
 
+                        }
+
+                        .blog-img {
+                        
+                            display: flex;
+                            height: 15vh;
+                            width: 100%;
+                            overflow: hidden;
+                            object-fit: clip;
+
+                        }
+                    }
+                }
+
+                a:hover {
+                    
+                    img {
+                        transform: scale(1.2);
+                        object-fit: cover;
                     }
                 }
             }
-
-            a:hover {
-                
-                img {
-                    transform: scale(1.2);
-                    object-fit: cover;
-                }
-            }
-
-        .view-more-btn {
+            
+            .view-more-btn {
 
                 display: flex;
                 justify-content: right;
+            }
         }
     }
 }
