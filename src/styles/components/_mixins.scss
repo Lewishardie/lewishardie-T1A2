@@ -1,11 +1,12 @@
 // Media Breakpoints defined with Mixins for easier use
 
 $tablet-width: 768px;
-$desktop-width: 1024px;
+$small-desktop-width: 1200px;
+$desktop-width: 1400px;
 
 @mixin tablet {
     
-    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$small-desktop-width - 1px}) {
       @content;
     }
 }
@@ -18,9 +19,18 @@ $desktop-width: 1024px;
     }
 }
 
+@mixin small-desktop {
+    
+  @media (min-width: #{$small-desktop-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+
+  }
+}
+
+
 // Breakpoints to resize content
 
-// Desktop Resize
+// Desktop 1400px Resize
 
 @include desktop {
 
@@ -77,9 +87,9 @@ p {
   .logo{
     a {
       img {
-          width: 400px;
-          height: 400px;
-          border-radius: 400px;
+          width: 200px;
+          height: 200px;
+          border-radius: 200px;
           
       }
 
@@ -263,54 +273,71 @@ p {
     flex-direction: row;
     
     .project-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
+      .project-title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+      }
 
       .project-cards.main {
+
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: flex-start;
+
 
         .project-card.main {
 
           width: 30%;
           margin: 0;
           margin-bottom: 2rem;
-         
-        }
+          
+          .project-description-main {
 
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              min-height: 25vh;
+
+          }
+        }
       }
       
       .project-cards {
 
+        width: 80%;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
-        .project-card.one {
+        .project-card {
 
-          width: 100%;
-          margin-right: 1rem;
-
-        }
-
-        .project-card.two {
-
-          width: 100%;
-          margin-left: 1rem;
+          width: 40%;
 
         }
-
         .project-description {
-
-          max-height: 25vh;
-          overflow: hidden;
+  
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-
+          min-height: 15vh;
+          
         }
 
+      }
+
+      .view-more-btn {
+
+        width: 80%;
       }
     }
   }
@@ -527,16 +554,560 @@ p {
 
 }
 
-
-
-// Tablet Resize
+// Tablet 768px Resize
 
 @include tablet {
 
   // Deafult Container 
   .container {
 
-    max-width: 60vw;
+    max-width: 75vw;
+  
+  }
+  
+  // Font tablet
+  
+  h1 {
+  
+    font-size: 4rem;
+    font-weight: 800;
+  
+  }
+  
+  h2 {
+  
+    font-size: 3.5rem;
+    font-weight: 700;
+  
+  }
+  
+  h3 {
+  
+        font-size: 1.5rem;
+        font-weight: 600;
+  
+  }
+  
+  h4 {
+  
+        font-size: 1.3rem;
+        font-weight: 400;
+  
+  }
+  
+  p {
+  
+        font-size: 1.2rem;
+        font-weight: 300;
+    
+  }
+
+  .view-more-btn, .contact-btn, .resume-btn, .submit-btn {
+
+    border-radius: .5rem;
+    height: 4rem;
+
+    a  {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+
+  }
+  
+  
+  //Header tablet Resize
+  
+  .header {
+  
+    // logo image size
+    .logo{
+      a {
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 200px;
+            
+        }
+  
+        }
+      
+    }
+  
+    // nav bar font size
+    .nav-bar {
+  
+      li {
+          font-size: 1.5rem;
+      }
+    }
+  }
+  
+  // Footer tablet Resize
+  
+  .footer {
+  
+    padding-top: 1rem;
+  
+    .footer-container {
+  
+      
+          max-width: 75vw;
+  
+          .footer-arrow {
+            
+            a {
+              width: 100px;
+              height: 100px;
+    
+            }
+          }
+          
+          ul img {
+  
+            width: 80px;
+            height: 80px;
+          
+          }
+    }
+  }
+  
+  // Landing Page tablet Resize
+  
+  .landing {
+      
+      .container {
+  
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+  
+        .landing-container {
+          
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+  
+        .landing-info.text {
+  
+          padding-bottom: 0;
+          width: 100%;
+          
+          .landing-action-container {
+
+            justify-content: space-between;
+            margin-top: 2rem;
+          }
+
+          .contact-btn, .resume-btn {
+
+            a {
+
+              height: 4rem;
+
+
+            }
+            
+          }
+          }
+        }
+      }
+  
+    }
+  
+  // About tablet Resize
+  
+  .about {
+  
+    .container {
+  
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+  
+      .about-container {
+        
+        .about-title {
+  
+          margin-bottom: 3rem;
+        }
+        .about-content {
+  
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          
+        }
+
+        .about-content.main {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+  
+        .about-img-container {
+  
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          padding-bottom: 1rem;
+  
+        }
+  
+        .about-img-container.main {
+  
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .about-text-container {
+       
+          width: 100%;
+
+
+          .view-more-btn {
+
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0rem;
+  
+        }
+
+        }
+        .about-text-container.main {
+
+          width: 100%;
+  
+          .resume-btn {
+
+            margin: 0;
+            padding: 0;
+            
+          }
+        }
+  
+      }
+  
+    }
+  }
+  
+  .skills {
+  
+    .container {
+  
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+  
+      .skills-container {
+  
+        flex-direction: row;
+        
+        .info-container {
+          width: 50%;
+          margin-right: 1rem;
+          margin-bottom: 0;
+        }
+  
+        .bar-wrapper {
+  
+          width: 50%;
+          margin-left: 1rem;
+  
+        }
+      }
+    }
+  }
+  
+  
+  
+  // Projects tablet Resize
+  
+  .projects {
+  
+    .container {
+  
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      flex-direction: row;
+      
+      .project-container {
+        
+        .project-cards.main {
+  
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+  
+          .project-card.main {
+  
+            width: 48%;
+            margin: 0;
+            margin-bottom: 2rem;
+           
+          }
+
+          .project-description-main {
+  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 28vh;
+            
+        }
+        
+        .project-cards {
+  
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          
+          .project-card {
+
+            width: 45%;
+
+          }
+          .project-description {
+  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 20vh;
+            
+          }
+
+          }
+        }
+      }
+    }
+  }
+  
+  // Landing page and Blog - tablet Resize
+  
+  .blog {
+  
+    .container {
+  
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+  
+      .blog-container {
+  
+  
+        .blog-cards {
+          
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+  
+          .blog-card {
+  
+            width: 30%;
+            height: 20vh;
+
+            h4 {
+              font-size: 1rem;
+              
+            }
+            
+            a {
+  
+              display: flex;
+              flex-direction: column;
+  
+              .blog-img {
+
+                height: 10vh;
+  
+              }
+  
+              .blog-section-img {
+  
+                height: 10vh;
+          
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .blog-main {
+  
+    .container {
+  
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+  
+      .blog-cards {
+  
+        .blog-card {
+
+          a {
+  
+            margin-bottom: 2rem;
+            width: 100%;
+
+          .blog-img {
+  
+            margin-bottom: 0;
+            border-radius: 1rem;
+            
+            }
+          }
+  
+          .blog-description {
+  
+            margin-bottom: 1rem;
+
+          }
+          .author-btn {
+
+            .view-more-btn {
+
+              a  {
+                font-size: 1.2rem;
+                font-weight: 600;
+                height: 4rem;
+                border-radius: .5rem;
+              }
+          
+            }
+            
+             
+            
+          }
+        }
+      }
+    }
+  }
+  
+  .blog-page {
+  
+    .container {
+  
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+      max-width: 70vw;
+  
+      .blog-container {
+  
+        .blog-content {
+           
+          .blog-img {
+            height: 20vh;
+            width: 100%;
+  
+          }
+        }
+    } 
+    }
+  }
+  
+  // Landing page and Contact tablet resize
+  
+  .contact {
+  
+    .container {
+
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+  
+      .contact-title {
+
+        width: 100%;
+        
+      }
+      .contact-container {
+  
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .contact-form-container {
+            width: 100%;
+          }
+      }
+    }
+  
+  }
+  
+  // Socials tablet resize
+
+  .socials {
+    
+    .container {
+      
+      .social-wrapper {
+        
+        .social-img {
+  
+          margin-bottom: 4rem;
+          width: 100%;
+  
+        }
+  
+        .social-wrapper-container {
+  
+  
+          flex-direction: row;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+  
+  
+          .social-wrapper-left {
+  
+            width: 50%;
+            margin-right: .5rem;
+  
+          }
+          .social-wrapper-right {
+  
+            width: 50%;
+            margin-left: .5rem;
+
+  
+          }
+  
+          .icon {
+            width: 3.5rem;
+            height: 3.5rem;
+  
+          }
+  
+          h3 {
+            font-size: 1.5rem;
+          }
+  
+          p {
+            font-size: .7rem;
+            
+          }
+        }
+      }
+    }
+  }
+  
+  //header margin 
+
+  .about-head, .blog-head, .contact-head, .projects-head {
+  
+    padding-top: 5rem;
+    
+  }
+}
+
+// Desktop 1200px Resize
+
+@include small-desktop {
+
+  // Deafult Container 
+  .container {
+
+    max-width: 65vw;
   
   }
   
@@ -773,7 +1344,6 @@ p {
       
       .project-container {
   
-  
         .project-cards.main {
   
           display: flex;
@@ -783,11 +1353,20 @@ p {
   
           .project-card.main {
   
-            width: 30%;
+            width: 45%;
             margin: 0;
             margin-bottom: 2rem;
            
           }
+
+          .project-description-main {
+  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 23vh;
+            
+        }
   
         }
         
@@ -795,31 +1374,22 @@ p {
   
           display: flex;
           flex-direction: row;
-  
-          .project-card.one {
-  
-            width: 100%;
-            margin-right: 1rem;
-  
+          justify-content: space-between;
+          
+          .project-card {
+
+            width: 45%;
+
           }
-  
-          .project-card.two {
-  
-            width: 100%;
-            margin-left: 1rem;
-  
-          }
-  
+
           .project-description {
   
-            max-height: 25vh;
-            overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-  
+            min-height: 13vh;
+            
           }
-  
         }
       }
     }
@@ -854,6 +1424,7 @@ p {
               flex-direction: column;
   
               .blog-img {
+
                 height: 10vh;
   
               }
@@ -955,7 +1526,7 @@ p {
         padding-bottom: 4rem;
   
       .contact-title {
-        width: 40%;
+        width: 80%;
         
       }
       .contact-container {
@@ -967,7 +1538,7 @@ p {
   
         .contact-form-container {
   
-          width: 40%;
+          width: 80%;
           
         }
       }
@@ -999,29 +1570,29 @@ p {
   
           .social-wrapper-left {
   
-            width: 40%;
-            margin-left: 1rem;
+            width: 50%;
+            margin-right: 1rem;
   
           }
           .social-wrapper-right {
   
-            width: 40%;
-            margin-right: 1rem;
+            width: 50%;
+            margin-left: 1rem;
   
           }
   
           .icon {
-            width: 128px;
-            height: 128px;
+            width: 5rem;
+            height: 5rem;
   
           }
   
           h3 {
-            font-size: 3rem;
+            font-size: 2.5rem;
           }
   
           p {
-            font-size: 1.5rem;
+            font-size: .8rem;
           }
         }
       }

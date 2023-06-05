@@ -30,9 +30,14 @@
         margin-bottom: 1rem;
     }
 
+    h4 {
+        margin-bottom: 1rem;
+    }
+
     p {
         margin-bottom: 1rem;
     }
+
 
     .container {
         
@@ -43,34 +48,31 @@
 
             .project-cards {
 
-                
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 2rem;
-
 
                 a {
                     text-decoration: none;
                     color: black;
                 }
 
-                .project-description {
+                .project-description,
+                .project-description-main {
 
                     text-align: left;
                     padding: 1rem;
 
                 }
+
                 
                 .project-card {
 
-                    width: 100%;
                     margin-bottom: 2rem;
+                    
 
-                    .project-card-container,
-                    .project-card-container.main {
+                    .project-card-container {
                         border-radius: 4px;
                         box-shadow: 0px 5px 10px rgba(0 0 0 / 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
-    
                     }
                 }
 
@@ -81,15 +83,17 @@
         
         
             .view-more-btn {
+                
                 display: flex;
                 justify-content: right;
-                padding-bottom: 1.5rem;
+                
 
             }
 
             .view-more-btn.main {
                 display: flex;
                 justify-content: center;
+                padding-bottom: 1.5rem;
     
             }
         }
