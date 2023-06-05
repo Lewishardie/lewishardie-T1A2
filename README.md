@@ -2,13 +2,13 @@
 
 
 ## Link to Porfolio Website:
-My portfolio website can be found at this **[link](www.lewishardie.com "Lewis Hardie Website")**.
+My portfolio website can be found at this **[link](https://lewishardie.com "Lewis Hardie Website")**.
 
 ## Link to Github Repository:
-My github respository can be found at this **[link](www.github.com/lewbagz "Lewis Hardie Github")**.
+My github respository can be found at this **[link](https:www.github.com/lewbagz/lewishardie-T1A2 "Lewis Hardie Github")**.
 
 ## Link to Video Presentation:
-My video presentation can be found at this **[link](https://www.youtube.com/lewishardie "Lewis Hardie Video Presentation")**.
+My video presentation can be found at this **[link](https://vimeo.com/833310081?share=copy "Lewis Hardie Video Presentation")**.
 
 ___
 
