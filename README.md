@@ -40,13 +40,20 @@ Each page has a header navigation  at the top and footer navigation at the botto
 Whilst creating the website, I made sure to use CSS Flex Box, and the appropiate sizing units i.e. `rem` or `%` to enable the website to scale up and down appropriately as much as possible.
 
 This sizes that the website have been tested on are as follows;
+
 - Desktop
-    - 1920 x 1440
+    - 1440p (2560 x 1440)
+    - 1080p (1920 x 1080)
+    - 720p (1280 x 720p)
 
 - Mobile
-    - Iphone SE
-    - Iphone 12
+
+    - Iphone SE (375 x 667)
+    - Iphone 12 (390 x 844)
+
 - Ipad
+    - Ipad Mini (768 x 1024)
+    - Ipad Air (820 x 1180)
 
 ### Design
 
@@ -67,53 +74,53 @@ Below will be some screenshots showing the wireframes that I've drawn up for the
 
 1. **Landing Page**
 
-    ![Landing wireframe for Desktop](/docs/landing-page-desktop.png) ![Landing wireframe for Mobile](/docs/landing-page-mobile.png)
+    ![Landing wireframe for Desktop](/docs/Wireframes/landing-page-desktop.png) ![Landing wireframe for Mobile](/docs/Wireframes/landing-page-mobile.png)
 
 2. **About**
 
-    ![About wireframe for Desktop](/docs/about-page-desktop.png) ![About Wireframe for mobile](/docs/about-page-mobile.png)
+    ![About wireframe for Desktop](/docs/Wireframes/about-page-desktop.png) ![About Wireframe for mobile](/docs/Wireframes/about-page-mobile.png)
 
 3. **Projects**
 
-    ![Projects wireframe for Desktop](/docs/projects-page-desktop.png) ![Projects Wireframe for mobile](/docs/projects-page-mobile.png)
+    ![Projects wireframe for Desktop](/docs/Wireframes/projects-page-desktop.png) ![Projects Wireframe for mobile](/docs/Wireframes/projects-page-mobile.png)
 
 4. **Contact**
 
-    ![Contact wireframe for Desktop](/docs/contact-page-desktop.png) ![Contact Wireframe for mobile](/docs/contact-page-mobile.png)
+    ![Contact wireframe for Desktop](/docs/Wireframes/contact-page-desktop.png) ![Contact Wireframe for mobile](/docs/Wireframes/contact-page-mobile.png)
 
 5. **Blog**
 
-    ![Blog wireframe for Desktop](/docs//blog-page-desktop.png) ![Blog Wireframe for mobile](/docs/blog-page-mobile.png)
+    ![Blog wireframe for Desktop](/docs/Wireframes/blog-page-desktop.png) ![Blog Wireframe for mobile](/docs/Wireframes/blog-page-mobile.png)
 
     - **Blog Child**
 
-        ![Blog child Wireframe for Desktop](/docs/blog-child-page-desktop.png) ![Blog child Wireframe for mobile](/docs/blog-child-page-mobile.png)
+        ![Blog child Wireframe for Desktop](/docs/Wireframes/blog-child-page-desktop.png) ![Blog child Wireframe for mobile](/docs/Wireframes/blog-child-page-mobile.png)
 
 ### Website
 
 1. **Landing Page**
-    ![Landing page for Desktop](/docs/screenshots/Landing-finished-desktop.png) ![Blog page for mobile](/docs/blog-page-mobile.png)
+    ![Landing page for Desktop](/docs/screenshots/Landing-finished-desktop.png)
 
 2. **About**
 
-     ![About page for Desktop](/docs/screenshots/About-finished-desktop.png) ![About page for mobile](/docs/about-page-mobile.png)
+     ![About page for Desktop](/docs/screenshots/About-finished-desktop.png)
 
 3. **Projects**
 
-       ![Projects page for Desktop](/docs/screenshots/Projects-finished-desktop.png) ![Projects page for mobile](/docs/projects-page-mobile.png)
+       ![Projects page for Desktop](/docs/screenshots/Projects-finished-desktop.png)
 
 4. **Contact**
 
-     ![Contact page for Desktop](/docs/screenshots/Contact-finished-desktop.png) ![Contact page for mobile](/docs/contact-page-mobile.png)
+     ![Contact page for Desktop](/docs/screenshots/Contact-finished-desktop.png)
 
 
 5. **Blog**
 
- ![Blog page for Desktop](/docs/screenshots/Blog-finished-desktop.png) ![Blog page for mobile](/docs/blog-page-mobile.png)
+ ![Blog page for Desktop](/docs/screenshots/Blog-finished-desktop.png) 
 
 - **Blog Child**
 
- ![Blog child page for Desktop](/docs/screenshots/Blog-finished-desktop.png) ![Blog child page for mobile](/docs/blog-child-page-mobile.png)
+ ![Blog child page for Desktop](/docs/screenshots/Blog-Child-Finished.png) 
 
 
 
@@ -139,7 +146,9 @@ I used the Flaticon for a all of my icons
 
 I used the Github repository to push my code to and track changes
 
-how did I screate my slides??
+I used keynote to make my powerpoint slide
+
+I used Go Daddy to host my server
 
 
 - HTML
@@ -147,6 +156,7 @@ how did I screate my slides??
 - SCSS
 - Visual Studio Code
 - Github
+- Go Daddy
 
 ## References
 
