@@ -18,12 +18,12 @@
 }
 
 .about {
+
     width: 100vw;
     background-color: lighten($primary-color, 65%);
     border-bottom: 2px solid $nav-border;
 
     h2 {
-        margin-bottom: 1rem;
         border-bottom: 2px solid $third-color;
     }
 
@@ -39,15 +39,15 @@
 
     .container {
         
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
+
 
         .about-title {
+             
+            margin-bottom: 2rem;
             
-            justify-content: left;
         }
 
         .about-container {
@@ -55,26 +55,39 @@
             width: 100%;
 
                 .about-content {
-                                
-                    margin-bottom: 1rem;
+
+                    display: flex;
+                    flex-direction: column-reverse;
+                    
                 
                 .about-text-container {
                     
                     display: flex;
                     flex-direction: column;
-                    margin-bottom: 1rem;
-                
+                    
                 }
 
-                .about-img-container {
-                    
-                    margin-bottom: 1rem;
+                .about-img-container.main {
+                    margin-bottom: 2rem;
+                }
+
+                .about-text {
+                    margin-bottom: 2rem;
+
                 }
 
                 .view-more-btn {
-
+                    margin-bottom: 2rem;
                     display: flex;
-                    justify-content: right;
+                    justify-content: left;
+
+                }
+
+                .resume-btn.main {
+                    margin-top: 2rem;
+                    display: flex;
+                    justify-content: center;
+
                 }
             }
         }
@@ -90,7 +103,10 @@
     h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
+        border-bottom: 2px solid $third-color;
     }
+    
+    
 
     .container {
 
@@ -98,7 +114,14 @@
         flex-direction: column;
         align-items: center;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
+
+        .skills-title {
+
+            width: 100%;
+            justify-content: left;
+
+        }
 
         .info-container {
 

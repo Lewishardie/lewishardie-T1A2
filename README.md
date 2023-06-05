@@ -122,9 +122,12 @@ how did I screate my slides??
 - Visual Studio Code
 - Github
 
-## Image References
+## References
 
 Here is a list of all images used within the portfolio, the vast majority of them were created by myself, however a lot of the icons were sourced from [Flat Icon](www.flaticon.com), for easy accessibility.
+
+'Geologica' designed by Monokrom, Sindre Bremnes, Frode Helland - acquired from Google Fonts
+    - https://fonts.google.com/specimen/Geologica
 
 Linkedin.png - Icon made by Freepik from www.flaticon.com
     - https://www.flaticon.com/free-icon/linkedin_1384014

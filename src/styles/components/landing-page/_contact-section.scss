@@ -116,7 +116,7 @@
 
                 display: flex;
                 flex-direction: column;
-                justify-content: left;
+                justify-content: center;
                 align-items: center;
                 margin-bottom: 2rem;
                 border-bottom: 2px solid $third-color;
@@ -127,48 +127,65 @@
 
             }
 
-            .social-wrapper-left {
+            .icon.click:hover {
+                transform: scale(1.2);
+            }
 
-                width: 100%;
 
-                .location, .phone, .email {
 
-                    margin-bottom: 2rem;
-                        
-                    .location-container, .phone-container, a{
+            .social-wrapper-container {
+
+                display: flex;
+                flex-direction: column;
+
+
+                .social-wrapper-left {
+
+                    width: 100%;
+
+                    .location, .phone, .email {
+
+                        margin-bottom: 2rem;
                             
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
+                        .location-container, .phone-container, a{
+                                
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
 
-                        .location-text, .phone-text, .email-text {
-                            padding-left: 1rem;
-                            color: black;
+                            .location-text, .phone-text, .email-text {
+                                padding-left: 1rem;
+                                color: black;
 
+                            }
                         }
                     }
                 }
-            }
-            
+                
 
-            .social-wrapper-right {
 
-                    width: 100%;
-                    
+                .social-wrapper-right {
 
-                .linkedin, .github, .twitter {
-
-                    margin-bottom: 2rem;
-
-                    a { 
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
+                        width: 100%;
                         
-                        .linkedin-text, .github-text, .twitter-text {
-                            padding-left: 1rem;
-                            color: black;
 
+                    .linkedin, .github, .twitter {
+
+                        margin-bottom: 2rem;
+                        
+
+                        a { 
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            width: auto;
+                            
+                            
+                            .linkedin-text, .github-text, .twitter-text {
+                                padding-left: 1rem;
+                                color: black;
+
+                            }
                         }
                     }
                 }

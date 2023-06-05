@@ -10,12 +10,16 @@
     
     .container {
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
         padding-top: 2rem;
         padding-bottom: 2rem;
+
+        .landing-container {
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
         .landing-info.img{
 
@@ -52,6 +56,7 @@
                         align-items: center;
             
                     }
+                }
                 }
             }
         }

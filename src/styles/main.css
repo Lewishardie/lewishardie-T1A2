@@ -161,8 +161,7 @@ p {
   border-radius: 4px;
   border: 1px solid #3e1647;
 }
-
-.projects-main .projects-main-img {
+.projects .projects-main-img {
   width: 100%;
   height: 20vh;
   -o-object-fit: cover;
@@ -211,7 +210,6 @@ p {
      object-fit: cover;
   -o-object-position: 100% 0;
      object-position: 100% 0;
-  border: 4px solid #9429cc;
 }
 .socials .icon {
   width: 64px;
@@ -245,7 +243,6 @@ p {
   border-bottom: 2px solid #570d80;
 }
 .about h2 {
-  margin-bottom: 1rem;
   border-bottom: 2px solid #9429cc;
 }
 .about h3 {
@@ -256,32 +253,38 @@ p {
   font-weight: 500;
 }
 .about .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .about .container .about-title {
-  justify-content: left;
+  margin-bottom: 2rem;
 }
 .about .container .about-container {
   width: 100%;
 }
 .about .container .about-container .about-content {
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .about .container .about-container .about-content .about-text-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
-.about .container .about-container .about-content .about-img-container {
-  margin-bottom: 1rem;
+.about .container .about-container .about-content .about-img-container.main {
+  margin-bottom: 2rem;
+}
+.about .container .about-container .about-content .about-text {
+  margin-bottom: 2rem;
 }
 .about .container .about-container .about-content .view-more-btn {
+  margin-bottom: 2rem;
   display: flex;
-  justify-content: right;
+  justify-content: left;
+}
+.about .container .about-container .about-content .resume-btn.main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .skills {
@@ -290,13 +293,18 @@ p {
 .skills h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  border-bottom: 2px solid #9429cc;
 }
 .skills .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
+}
+.skills .container .skills-title {
+  width: 100%;
+  justify-content: left;
 }
 .skills .container .info-container {
   margin-bottom: 1rem;
@@ -400,31 +408,33 @@ p {
   margin-bottom: 0.5rem;
 }
 .landing .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.landing .container .landing-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
-.landing .container .landing-info.img {
+.landing .container .landing-container .landing-info.img {
   margin-bottom: 1rem;
 }
-.landing .container .landing-info.text {
+.landing .container .landing-container .landing-info.text {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.landing .container .landing-info.text .landing-text-container {
+.landing .container .landing-container .landing-info.text .landing-text-container {
   margin-bottom: 1rem;
   text-align: left;
 }
-.landing .container .landing-info.text .landing-action-container {
+.landing .container .landing-container .landing-info.text .landing-action-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.landing .container .landing-info.text .landing-action-container .contact-btn a, .landing .container .landing-info.text .landing-action-container .resume-btn a {
+.landing .container .landing-container .landing-info.text .landing-action-container .contact-btn a, .landing .container .landing-container .landing-info.text .landing-action-container .resume-btn a {
   min-width: 8rem;
   min-height: 3rem;
   display: flex;
@@ -449,7 +459,7 @@ p {
   border-bottom: 2px solid #570d80;
 }
 .projects h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-bottom: 2px solid #9429cc;
 }
 .projects h3 {
@@ -459,25 +469,28 @@ p {
   margin-bottom: 1rem;
 }
 .projects .container {
-  display: flex;
-  align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.projects .container .project-container {
-  width: 100%;
+.projects .container .project-container .project-cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
 }
 .projects .container .project-container .project-cards a {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
 .projects .container .project-container .project-cards .project-description {
   text-align: left;
   padding: 1rem;
 }
-.projects .container .project-container .project-cards .project-card .project-card-container {
+.projects .container .project-container .project-cards .project-card {
+  width: 100%;
   margin-bottom: 2rem;
-  padding: 1rem;
+}
+.projects .container .project-container .project-cards .project-card .project-card-container,
+.projects .container .project-container .project-cards .project-card .project-card-container.main {
   border-radius: 4px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -487,37 +500,11 @@ p {
 .projects .container .project-container .view-more-btn {
   display: flex;
   justify-content: right;
+  padding-bottom: 1.5rem;
 }
-
-.projects-main {
-  width: 100vw;
-  border-bottom: 2px solid #570d80;
-}
-.projects-main h3 {
-  margin-bottom: 0.2rem;
-}
-.projects-main .container {
-  display: flex;
-  align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.projects-main .container .project-cards {
-  width: 100%;
-}
-.projects-main .container .project-cards .view-more-btn {
+.projects .container .project-container .view-more-btn.main {
   display: flex;
   justify-content: center;
-}
-.projects-main .container .project-cards .project-description {
-  text-align: left;
-  padding: 1rem;
-}
-.projects-main .container .project-cards .project-card {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 4px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0 3px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog-head {
@@ -698,7 +685,7 @@ p {
 .blog-page .container .blog-container {
   width: 80vw;
 }
-.blog-page .container .blog-container .blog-title {
+.blog-page .container .blog-container .header-text {
   border-bottom: 2px solid #9429cc;
 }
 .blog-page .container .blog-container .author-date {
@@ -710,13 +697,13 @@ p {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .blog-page .container .blog-container .blog-content .blog-img {
   display: flex;
   border-radius: 15px;
   height: 45vh;
-  width: 45vh;
+  width: 45vw;
   overflow: hidden;
   -o-object-fit: clip;
      object-fit: clip;
@@ -819,7 +806,7 @@ p {
 .socials .container .social-wrapper .social-img {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
   border-bottom: 2px solid #9429cc;
@@ -827,33 +814,41 @@ p {
 .socials .container .social-wrapper .social-img .img-name {
   padding-top: 1rem;
 }
-.socials .container .social-wrapper .social-wrapper-left {
+.socials .container .social-wrapper .icon.click:hover {
+  transform: scale(1.2);
+}
+.socials .container .social-wrapper .social-wrapper-container {
+  display: flex;
+  flex-direction: column;
+}
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-left {
   width: 100%;
 }
-.socials .container .social-wrapper .social-wrapper-left .location, .socials .container .social-wrapper .social-wrapper-left .phone, .socials .container .social-wrapper .social-wrapper-left .email {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email {
   margin-bottom: 2rem;
 }
-.socials .container .social-wrapper .social-wrapper-left .location .location-container, .socials .container .social-wrapper .social-wrapper-left .location .phone-container, .socials .container .social-wrapper .social-wrapper-left .location a, .socials .container .social-wrapper .social-wrapper-left .phone .location-container, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container, .socials .container .social-wrapper .social-wrapper-left .phone a, .socials .container .social-wrapper .social-wrapper-left .email .location-container, .socials .container .social-wrapper .social-wrapper-left .email .phone-container, .socials .container .social-wrapper .social-wrapper-left .email a {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .location-container, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .phone-container, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location a, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .location-container, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .phone-container, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone a, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .location-container, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .phone-container, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email a {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.socials .container .social-wrapper .social-wrapper-left .location .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .location .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .location a .location-text, .socials .container .social-wrapper .social-wrapper-left .location a .phone-text, .socials .container .social-wrapper .social-wrapper-left .location a .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .phone a .location-text, .socials .container .social-wrapper .social-wrapper-left .phone a .phone-text, .socials .container .social-wrapper .social-wrapper-left .phone a .email-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .location-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-left .email .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-left .email a .location-text, .socials .container .social-wrapper .social-wrapper-left .email a .phone-text, .socials .container .social-wrapper .social-wrapper-left .email a .email-text {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .location-container .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .location-container .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location a .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location a .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .location a .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .location-container .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .location-container .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone a .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone a .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .phone a .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .location-container .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .location-container .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .location-container .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .phone-container .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .phone-container .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email .phone-container .email-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email a .location-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email a .phone-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left .email a .email-text {
   padding-left: 1rem;
   color: black;
 }
-.socials .container .social-wrapper .social-wrapper-right {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-right {
   width: 100%;
 }
-.socials .container .social-wrapper .social-wrapper-right .linkedin, .socials .container .social-wrapper .social-wrapper-right .github, .socials .container .social-wrapper .social-wrapper-right .twitter {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .linkedin, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .github, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .twitter {
   margin-bottom: 2rem;
 }
-.socials .container .social-wrapper .social-wrapper-right .linkedin a, .socials .container .social-wrapper .social-wrapper-right .github a, .socials .container .social-wrapper .social-wrapper-right .twitter a {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .linkedin a, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .github a, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .twitter a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: auto;
 }
-.socials .container .social-wrapper .social-wrapper-right .linkedin a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .github-text, .socials .container .social-wrapper .social-wrapper-right .linkedin a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .github a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .github a .github-text, .socials .container .social-wrapper .social-wrapper-right .github a .twitter-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .linkedin-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .github-text, .socials .container .social-wrapper .social-wrapper-right .twitter a .twitter-text {
+.socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .linkedin a .linkedin-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .linkedin a .github-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .linkedin a .twitter-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .github a .linkedin-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .github a .github-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .github a .twitter-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .twitter a .linkedin-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .twitter a .github-text, .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right .twitter a .twitter-text {
   padding-left: 1rem;
   color: black;
 }
@@ -883,6 +878,38 @@ p {
   border: 2px solid #dbfa61;
 }
 .view-more-btn a:active, .contact-btn a:active, .resume-btn a:active {
+  transition: 0.1s;
+  background: #caf817;
+  transform: translateY(2px);
+  border: 2px solid #9429cc;
+  color: #570d80;
+}
+
+.resume-btn.main {
+  color: #9429cc;
+}
+.resume-btn.main a {
+  width: 12rem;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Geologica", sans-serif;
+  color: #9429cc;
+  border: 2px solid #9429cc;
+  border-radius: 3rem;
+  background: #dbfa61;
+}
+.resume-btn.main a:hover {
+  background: #9429cc;
+  color: white;
+  transform: scale(1.1);
+  border: 3px solid #dbfa61;
+}
+.resume-btn.main a:active {
   transition: 0.1s;
   background: #caf817;
   transform: translateY(2px);
@@ -943,45 +970,17 @@ body {
     font-size: 1.2rem;
     font-weight: 300;
   }
-}
-@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1023px) {
-  .header .logo a img {
-    width: 200px;
-    height: 200px;
-    border-radius: 200px;
-  }
-}
-@media (min-width: 1024px) and (min-width: 1024px) {
   .header .logo a img {
     width: 400px;
     height: 400px;
     border-radius: 400px;
   }
-}
-@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1023px) {
-  .header .nav-bar li {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 1024px) and (min-width: 1024px) {
   .header .nav-bar li {
     font-size: 2rem;
   }
-}
-@media (min-width: 1024px) and (min-width: 768px) and (max-width: 1023px) {
-  .footer .footer-container {
-    max-width: 70vw;
+  .footer {
+    padding-top: 1rem;
   }
-  .footer .footer-container img {
-    width: 128px;
-    height: 128px;
-  }
-  .footer .footer-container ul img {
-    width: 64px;
-    height: 64px;
-  }
-}
-@media (min-width: 1024px) and (min-width: 1024px) {
   .footer .footer-container {
     max-width: 60vw;
   }
@@ -993,30 +992,36 @@ body {
     width: 80px;
     height: 80px;
   }
-}
-@media (min-width: 1024px) {
   .landing .container {
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
   }
-  .landing .container .landing-info.img {
-    width: 50%;
+  .landing .container .landing-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .landing .container .landing-container .landing-info.img {
+    width: 60%;
     margin: 0;
     padding: 0;
     padding-right: 1rem;
   }
-  .landing .container .landing-info.text {
+  .landing .container .landing-container .landing-info.text {
     width: 50%;
     padding-left: 1rem;
     padding-bottom: 1rem;
   }
-}
-@media (min-width: 1024px) {
+  .about .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  .about .container .about-container .about-title {
+    margin-bottom: 3rem;
+  }
   .about .container .about-container .about-content {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: center;
   }
   .about .container .about-container .about-img-container {
     width: 50%;
@@ -1024,39 +1029,79 @@ body {
     padding: 0;
     padding-left: 1rem;
   }
+  .about .container .about-container .about-img-container.main {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
   .about .container .about-container .about-text-container {
     width: 50%;
     padding-right: 1rem;
-    margin-bottom: 1rem;
   }
   .about .container .about-container .about-text-container p {
     margin-bottom: 3rem;
   }
-}
-@media (min-width: 1024px) {
-  .projects .container {
-    flex-direction: column;
+  .about .container .about-container .about-text-container.main {
+    width: 50%;
+    padding-left: 1rem;
   }
-  .projects .container .project-cards {
+  .about .container .about-container .about-text-container.main p {
+    margin-bottom: 3rem;
+  }
+  .skills .container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .skills .container .skills-container {
+    flex-direction: row;
+  }
+  .skills .container .skills-container .info-container {
+    width: 50%;
+    margin-right: 1rem;
+  }
+  .skills .container .skills-container .bar-wrapper {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  .projects .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    flex-direction: row;
+  }
+  .projects .container .project-container .project-cards.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .projects .container .project-container .project-cards.main .project-card.main {
+    width: 30%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .projects .container .project-container .project-cards {
     display: flex;
     flex-direction: row;
   }
-  .projects .container .project-cards .project-card.one {
+  .projects .container .project-container .project-cards .project-card.one {
     width: 100%;
     margin-right: 1rem;
   }
-  .projects .container .project-cards .project-card.two {
+  .projects .container .project-container .project-cards .project-card.two {
     width: 100%;
     margin-left: 1rem;
   }
-  .projects .container .project-cards .project-description {
-    height: 10vh;
+  .projects .container .project-container .project-cards .project-description {
+    max-height: 25vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-}
-@media (min-width: 1024px) {
+  .blog .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
   .blog .container .blog-container .blog-cards {
     display: flex;
     flex-direction: row;
@@ -1076,10 +1121,49 @@ body {
   .blog .container .blog-container .blog-cards .blog-card a .blog-section-img {
     height: 10vh;
   }
-}
-@media (min-width: 1024px) {
+  .blog-main .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  .blog-main .container .blog-cards .blog-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  .blog-main .container .blog-cards .blog-card a {
+    margin-right: 1rem;
+  }
+  .blog-main .container .blog-cards .blog-card a .blog-img {
+    margin-bottom: 0;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 2rem;
+  }
+  .blog-main .container .blog-cards .blog-card .blog-description {
+    margin-left: 1rem;
+  }
+  .blog-main .container .blog-cards .blog-card .author-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+  }
+  .blog-page .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    max-width: 40vw;
+  }
+  .blog-page .container .blog-container .blog-content .blog-img {
+    height: 20vh;
+    width: 40vw;
+  }
+  .contact .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
   .contact .container .contact-title {
-    width: 100%;
+    width: 40%;
   }
   .contact .container .contact-container {
     display: flex;
@@ -1090,14 +1174,45 @@ body {
   .contact .container .contact-container .contact-form-container {
     width: 40%;
   }
+  .socials .container .social-wrapper .social-img {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .socials .container .social-wrapper .social-wrapper-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left {
+    width: 40%;
+    margin-left: 1rem;
+  }
+  .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right {
+    width: 40%;
+    margin-right: 1rem;
+  }
+  .socials .container .social-wrapper .social-wrapper-container .icon {
+    width: 128px;
+    height: 128px;
+  }
+  .socials .container .social-wrapper .social-wrapper-container h3 {
+    font-size: 3rem;
+  }
+  .socials .container .social-wrapper .social-wrapper-container p {
+    font-size: 1.5rem;
+  }
+  .about-head, .blog-head, .contact-head, .projects-head {
+    padding-top: 5rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    max-width: 70vw;
+    max-width: 60vw;
   }
   h1 {
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
   }
   h2 {
     font-size: 3.5rem;
@@ -1115,45 +1230,17 @@ body {
     font-size: 1.2rem;
     font-weight: 300;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
   .header .logo a img {
     width: 200px;
     height: 200px;
     border-radius: 200px;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
-  .header .logo a img {
-    width: 400px;
-    height: 400px;
-    border-radius: 400px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
   .header .nav-bar li {
     font-size: 1.5rem;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
-  .header .nav-bar li {
-    font-size: 2rem;
+  .footer {
+    padding-top: 1rem;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) and (min-width: 768px) and (max-width: 1023px) {
-  .footer .footer-container {
-    max-width: 70vw;
-  }
-  .footer .footer-container img {
-    width: 128px;
-    height: 128px;
-  }
-  .footer .footer-container ul img {
-    width: 64px;
-    height: 64px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) and (min-width: 1024px) {
   .footer .footer-container {
     max-width: 60vw;
   }
@@ -1165,30 +1252,36 @@ body {
     width: 80px;
     height: 80px;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
   .landing .container {
-    flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
   }
-  .landing .container .landing-info.img {
-    width: 50%;
+  .landing .container .landing-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .landing .container .landing-container .landing-info.img {
+    width: 60%;
     margin: 0;
     padding: 0;
     padding-right: 1rem;
   }
-  .landing .container .landing-info.text {
+  .landing .container .landing-container .landing-info.text {
     width: 50%;
     padding-left: 1rem;
     padding-bottom: 1rem;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
+  .about .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  .about .container .about-container .about-title {
+    margin-bottom: 3rem;
+  }
   .about .container .about-container .about-content {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: center;
   }
   .about .container .about-container .about-img-container {
     width: 50%;
@@ -1196,39 +1289,79 @@ body {
     padding: 0;
     padding-left: 1rem;
   }
+  .about .container .about-container .about-img-container.main {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
   .about .container .about-container .about-text-container {
     width: 50%;
     padding-right: 1rem;
-    margin-bottom: 1rem;
   }
   .about .container .about-container .about-text-container p {
     margin-bottom: 3rem;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .projects .container {
-    flex-direction: column;
+  .about .container .about-container .about-text-container.main {
+    width: 50%;
+    padding-left: 1rem;
   }
-  .projects .container .project-cards {
+  .about .container .about-container .about-text-container.main p {
+    margin-bottom: 3rem;
+  }
+  .skills .container {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+  .skills .container .skills-container {
+    flex-direction: row;
+  }
+  .skills .container .skills-container .info-container {
+    width: 50%;
+    margin-right: 1rem;
+  }
+  .skills .container .skills-container .bar-wrapper {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  .projects .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    flex-direction: row;
+  }
+  .projects .container .project-container .project-cards.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .projects .container .project-container .project-cards.main .project-card.main {
+    width: 30%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .projects .container .project-container .project-cards {
     display: flex;
     flex-direction: row;
   }
-  .projects .container .project-cards .project-card.one {
+  .projects .container .project-container .project-cards .project-card.one {
     width: 100%;
     margin-right: 1rem;
   }
-  .projects .container .project-cards .project-card.two {
+  .projects .container .project-container .project-cards .project-card.two {
     width: 100%;
     margin-left: 1rem;
   }
-  .projects .container .project-cards .project-description {
-    height: 10vh;
+  .projects .container .project-container .project-cards .project-description {
+    max-height: 25vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
+  .blog .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
   .blog .container .blog-container .blog-cards {
     display: flex;
     flex-direction: row;
@@ -1248,10 +1381,49 @@ body {
   .blog .container .blog-container .blog-cards .blog-card a .blog-section-img {
     height: 10vh;
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
+  .blog-main .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+  .blog-main .container .blog-cards .blog-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  .blog-main .container .blog-cards .blog-card a {
+    margin-right: 1rem;
+  }
+  .blog-main .container .blog-cards .blog-card a .blog-img {
+    margin-bottom: 0;
+    height: 25vh;
+    width: 25vw;
+    border-radius: 2rem;
+  }
+  .blog-main .container .blog-cards .blog-card .blog-description {
+    margin-left: 1rem;
+  }
+  .blog-main .container .blog-cards .blog-card .author-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+  }
+  .blog-page .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    max-width: 40vw;
+  }
+  .blog-page .container .blog-container .blog-content .blog-img {
+    height: 20vh;
+    width: 40vw;
+  }
+  .contact .container {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
   .contact .container .contact-title {
-    width: 100%;
+    width: 40%;
   }
   .contact .container .contact-container {
     display: flex;
@@ -1261,5 +1433,36 @@ body {
   }
   .contact .container .contact-container .contact-form-container {
     width: 40%;
+  }
+  .socials .container .social-wrapper .social-img {
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+  .socials .container .social-wrapper .social-wrapper-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials .container .social-wrapper .social-wrapper-container .social-wrapper-left {
+    width: 40%;
+    margin-left: 1rem;
+  }
+  .socials .container .social-wrapper .social-wrapper-container .social-wrapper-right {
+    width: 40%;
+    margin-right: 1rem;
+  }
+  .socials .container .social-wrapper .social-wrapper-container .icon {
+    width: 128px;
+    height: 128px;
+  }
+  .socials .container .social-wrapper .social-wrapper-container h3 {
+    font-size: 3rem;
+  }
+  .socials .container .social-wrapper .social-wrapper-container p {
+    font-size: 1.5rem;
+  }
+  .about-head, .blog-head, .contact-head, .projects-head {
+    padding-top: 5rem;
   }
 }/*# sourceMappingURL=main.css.map */
