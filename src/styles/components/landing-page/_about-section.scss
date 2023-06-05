@@ -1,7 +1,7 @@
 .about-head {
 
     width: 100vw;
-    border-bottom: 2px solid $nav-border;
+    border-bottom: 2px solid $border;
 
     .container {
         padding-top: 2rem;
@@ -20,11 +20,11 @@
 .about {
 
     width: 100vw;
-    background-color: lighten($primary-color, 65%);
-    border-bottom: 2px solid $nav-border;
+    background-color: lighten($border, 65%);
+    border-bottom: 2px solid $border;
 
     h2 {
-        border-bottom: 2px solid $third-color;
+        border-bottom: 2px solid $primary-color;
     }
 
     h3 {
@@ -98,12 +98,12 @@
 
 .skills {
 
-    border-bottom: 2px solid $nav-border;
+    border-bottom: 2px solid $border;
 
     h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        border-bottom: 2px solid $third-color;
+        border-bottom: 2px solid $primary-color;
     }
     
     

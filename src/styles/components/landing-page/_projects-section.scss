@@ -1,7 +1,7 @@
 .projects-head {
 
     width: 100vw;
-    border-bottom: 2px solid $nav-border;
+    border-bottom: 2px solid $border;
 
     .container {
         padding-top: 2rem;
@@ -19,11 +19,11 @@
 
 .projects {
     width: 100vw;
-    border-bottom: 2px solid $nav-border;
+    border-bottom: 2px solid $border;
 
     h2 {
         margin-bottom: 2rem;
-        border-bottom: 2px solid $third-color;
+        border-bottom: 2px solid $primary-color;
     }
 
     h3 {

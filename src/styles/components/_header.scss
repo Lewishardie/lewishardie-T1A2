@@ -1,7 +1,7 @@
 
 .header {
     width: 100vw;
-    background-color: $third-color;
+    background-color: $primary-color;
    
     // Nav containter
 
@@ -38,7 +38,7 @@
                 
                 .current-page {
                     color: white;
-                    background-color: $third-color;
+                    background-color: $primary-color;
                     border-top: 2px solid $secondary-color;
                 }
                     
@@ -46,10 +46,10 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border-top: 2px solid $primary-color;
-                    border-bottom: 2px solid $primary-color;
+                    border-top: 2px solid $border;
+                    border-bottom: 2px solid $border;
                     text-decoration: none;
-                    color: $primary-color;
+                    color: $border;
                     font-weight: bold;
                     height: 5vh;
                     transition: color .2s ease-in-out, box-shadow .2s ease-in-out, border-top .2s ease-in-out;
@@ -60,7 +60,7 @@
 
                 a:hover {
                     color: white;
-                    box-shadow: inset 25vw 0 0 0 $third-color;
+                    box-shadow: inset 25vw 0 0 0 $primary-color;
                     border-top: 2px solid $secondary-color;
                             
                 }

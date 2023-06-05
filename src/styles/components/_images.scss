@@ -20,8 +20,8 @@
         img {
             height: 40vh;
             width: 100%;
-            border-radius: 4px;
-            border: 1px solid $font-primary-color;
+            border-radius: 10px;
+            border: 2px solid $primary-color;
             object-fit: cover;
             object-position: 100% 20;
         }
@@ -34,8 +34,8 @@
     .about-main-img, .about-img {
         height: 30vh;
         width: 100%;
-        border-radius: 4px;
-        border: 1px solid $font-primary-color;
+        border-radius: 10px;
+        border: 2px solid $primary-color;
         object-fit: cover;
         object-position: 100% 0;
 
@@ -51,7 +51,7 @@
         height: 20vh;
         object-fit: cover;
         border-radius: 4px;
-        border: 1px solid $font-primary-color;
+        border: 2px solid $primary-color;
             
     }
 
@@ -61,7 +61,7 @@
         height: 20vh;
         object-fit: cover;
         border-radius: 4px;
-        border: 1px solid $font-primary-color;
+        border: 2px solid $primary-color;
 
     }
     

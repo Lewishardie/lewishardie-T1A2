@@ -128,8 +128,8 @@ p {
 .landing .landing-info img {
   height: 40vh;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid #3e1647;
+  border-radius: 10px;
+  border: 2px solid #9429cc;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 100% 20;
@@ -142,8 +142,8 @@ p {
 .about .about-main-img, .about .about-img {
   height: 30vh;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid #3e1647;
+  border-radius: 10px;
+  border: 2px solid #9429cc;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 100% 0;
@@ -159,7 +159,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
-  border: 1px solid #3e1647;
+  border: 2px solid #9429cc;
 }
 .projects .projects-main-img {
   width: 100%;
@@ -167,7 +167,7 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
-  border: 1px solid #3e1647;
+  border: 2px solid #9429cc;
 }
 
 .blog {
@@ -610,11 +610,10 @@ p {
   align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.blog-main .container .blog-cards {
   width: 80vw;
 }
 .blog-main .container .blog-cards .blog-card {
+  width: 100%;
   margin-top: 2rem;
   border-bottom: 2px solid #9429cc;
   padding-bottom: 2rem;
@@ -627,8 +626,8 @@ p {
 .blog-main .container .blog-cards .blog-card a .blog-img {
   display: flex;
   border-radius: 15px;
-  height: 45vh;
-  width: 45vh;
+  height: 40vh;
+  width: 100%;
   overflow: hidden;
   -o-object-fit: clip;
      object-fit: clip;
@@ -702,8 +701,8 @@ p {
 .blog-page .container .blog-container .blog-content .blog-img {
   display: flex;
   border-radius: 15px;
-  height: 45vh;
-  width: 45vw;
+  height: 40vh;
+  width: 100%;
   overflow: hidden;
   -o-object-fit: clip;
      object-fit: clip;
