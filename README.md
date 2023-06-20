@@ -2,7 +2,7 @@
 
 
 ## Link to Porfolio Website:
-My portfolio website can be found at this **[link](https://lewishardie.com "Lewis Hardie Website")**.
+My portfolio website can be found at this **[link](https://lewishardie-assignment.netlify.app/ "Lewis Hardie Website")**.
 
 ## Link to Github Repository:
 My github respository can be found at this **[link](https://github.com/Lewbagz/lewishardie-T1A2 "Lewis Hardie Github")**.
