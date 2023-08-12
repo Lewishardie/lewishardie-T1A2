@@ -5,7 +5,7 @@
 My portfolio website can be found at this **[link](https://lewishardie-assignment.netlify.app/ "Lewis Hardie Website")**.
 
 ## Link to Github Repository:
-My github respository can be found at this **[link](https://github.com/Lewishardie/lewishardie-T1A2 "Lewis Hardie Github")**.
+My github respository can be found at this **[link](https://github.com/lewishardie/lewishardie-T1A2 "Lewis Hardie Github")**.
 
 ## Link to Video Presentation:
 My video presentation can be found at this **[link](https://vimeo.com/833310081?share=copy "Lewis Hardie Video Presentation")**.
